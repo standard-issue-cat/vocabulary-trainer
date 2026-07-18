@@ -1115,8 +1115,7 @@ function showExpertQuestion() {
 
 
     practiceTitle.textContent =
-        "Expert Mode";
-
+        "Expert Mode: Complete the sentence";
 
 
     const examples =
@@ -1141,15 +1140,32 @@ function showExpertQuestion() {
 
 
     questionArea.innerHTML =
-        `
+    `
 
-        <p class="question">
+    <div class="meaning-hint">
 
-        ${escapeHTML(example.hidden)}
+        <strong>
+        Meaning:
+        </strong>
 
+        <p>
+        ${escapeHTML(
+            practice.current.meaning
+        )}
         </p>
 
-        `;
+    </div>
+
+
+    <p class="question">
+
+        ${escapeHTML(
+            example.hidden
+        )}
+
+    </p>
+
+    `;
 
 
 }
