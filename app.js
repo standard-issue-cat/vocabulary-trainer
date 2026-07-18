@@ -68,6 +68,12 @@ const dialogUsage = document.getElementById("dialogUsage");
 const dialogExamples = document.getElementById("dialogExamples");
 const dialogClose = document.getElementById("dialogClose");
 
+
+
+
+const synonymsSection = document.getElementById("synonymsSection");
+
+const usageSection = document.getElementById("usageSection");
 // ======================================================
 // START
 // ======================================================
@@ -388,7 +394,7 @@ function saveVocabulary() {
 
 
     const usage =
-        usageInput.value.trim();
+        usageInput.value.trim() || "normalsprachlich";
 
     if (!word || !meaning) {
 
@@ -868,26 +874,49 @@ function showVocabulary(vocabulary) {
     dialogWord.innerHTML =
         escapeHTML(vocabulary.word);
 
+
     dialogMeaning.innerHTML =
         escapeHTML(vocabulary.meaning);
 
-    dialogSynonyms.innerHTML =
-    vocabulary.synonyms &&
-    vocabulary.synonyms.length > 0
-        ?
-        escapeHTML(
-            vocabulary.synonyms.join(", ")
-        )
-        :
-        "-";
 
+
+    /* Synonyms */
+
+    if (
+        vocabulary.synonyms &&
+        vocabulary.synonyms.length > 0
+    ) {
+
+        synonymsSection.style.display = "block";
+
+        dialogSynonyms.innerHTML =
+            escapeHTML(
+                vocabulary.synonyms.join(", ")
+            );
+
+    }
+
+    else {
+
+        synonymsSection.style.display = "none";
+
+    }
+
+
+
+    /* Usage */
 
     dialogUsage.innerHTML =
-        vocabulary.usage
-            ?
-            escapeHTML(vocabulary.usage)
-            :
-            "-";
+        escapeHTML(
+            vocabulary.usage || "normalsprachlich"
+        );
+
+
+    usageSection.style.display = "block";
+
+
+
+    /* Examples */
 
     dialogExamples.innerHTML =
         vocabulary.examples
@@ -897,6 +926,8 @@ function showVocabulary(vocabulary) {
                 </div>`
             )
             .join("");
+
+
 
     vocabularyDialog.showModal();
 
