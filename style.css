@@ -673,3 +673,30 @@ dialog input {
         #ddd;
 
 }
+
+/* ======================================================
+   EXAMPLE FORMATTING
+====================================================== */
+
+
+.vocab-word {
+
+    color:
+        #e879f9;
+
+    font-weight:
+        bold;
+
+}
+
+
+
+.comment {
+
+    color:
+        #ff9800;
+
+    font-style:
+        italic;
+
+}

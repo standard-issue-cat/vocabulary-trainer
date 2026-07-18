@@ -488,7 +488,7 @@ function parseExample(text) {
 
     const parts = [];
 
-    const regex = /\{([^{}]+)\}/g;
+    const regex = /(\{([^{}]+)\}|\[([^\]]+)\])/g;
 
     let lastIndex = 0;
 
@@ -521,14 +521,30 @@ function parseExample(text) {
 
         // markierter Teil
 
-        parts.push({
+        if (match[2]) {
 
-            type: "answer",
+            parts.push({
 
-            value:
-                match[1]
+                type:"answer",
 
-        });
+                value:
+                    match[2]
+
+            });
+
+        }
+        else if (match[3]) {
+
+            parts.push({
+
+                type:"comment",
+
+                value:
+                    match[3]
+
+            });
+
+        }
 
 
         lastIndex =
@@ -971,6 +987,50 @@ function escapeHTML(text) {
         .replaceAll(">","&gt;")
         .replaceAll('"',"&quot;")
         .replaceAll("'","&#039;");
+
+}
+function renderExampleHTML(example) {
+
+
+    if (!example.parts) {
+
+        return escapeHTML(
+            example.original
+        );
+
+    }
+
+
+
+    return example.parts
+        .map(
+            part => {
+
+
+                if (
+                    part.type === "answer"
+                ) {
+
+                    return `
+
+                    <span class="vocab-word">
+                    ${escapeHTML(part.value)}
+                    </span>
+
+                    `;
+
+                }
+
+
+
+                return escapeHTML(
+                    part.value
+                );
+
+
+            }
+        )
+        .join("");
 
 }
 
@@ -1668,9 +1728,7 @@ function showCurrentAnswer() {
                 `
 
                 <li>
-                ${escapeHTML(
-                    example.original
-                )}
+                ${renderExampleHTML(example)}
                 </li>
 
                 `
