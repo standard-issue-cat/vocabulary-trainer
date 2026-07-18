@@ -131,20 +131,41 @@ function save() {
 
 function load() {
 
-    const data = localStorage.getItem(STORAGE_KEY);
+    const data =
+        localStorage.getItem(
+            STORAGE_KEY
+        );
+
 
     if (!data)
         return;
 
+
     try {
 
-        app = JSON.parse(data);
+        const saved =
+            JSON.parse(data);
+
+
+        app.languages =
+            saved.languages ?? [];
+
+
+        app.vocabulary =
+            saved.vocabulary ?? [];
+
+
+        app.editingId =
+            null;
+
 
     }
 
     catch {
 
-        alert("Could not load saved data.");
+        alert(
+            "Could not load saved data."
+        );
 
     }
 
@@ -1975,10 +1996,19 @@ function importJSON(event) {
 
                 save();
 
-
                 renderLanguages();
 
                 renderVocabulary();
+
+                practice.usedCards = [];
+
+                alert(
+                    "Import successful. Loaded "
+                    +
+                    app.vocabulary.length
+                    +
+                    " vocabulary items."
+                );
 
 
 
