@@ -282,7 +282,7 @@ function createExampleField(value = "") {
     textarea.rows = 3;
 
     textarea.placeholder =
-        "Ich {mache} heute bei dem Spiel {mit}. [Optionaler Kommentar]";
+        "Ich {mache} heute bei dem Spiel {mit}. /*Optionaler Kommentar*/";
 
     textarea.className = "example";
 
@@ -497,7 +497,7 @@ function parseExample(text) {
 
     const parts = [];
 
-    const regex = /(\{([^{}]+)\}|\[([^\]]+)\])/g;
+    const regex = /(\{([^{}]+)\}|\/\*([^*]+)\*\/)/g;
 
     let lastIndex = 0;
 
@@ -548,8 +548,7 @@ function parseExample(text) {
 
                 type:"comment",
 
-                value:
-                    match[3]
+                value: match[3].trim()
 
             });
 
@@ -1006,11 +1005,11 @@ function convertBackToBrackets(example) {
                     ) {
 
                         return (
-                            "["
+                            "/*"
                             +
                             part.value
                             +
-                            "]"
+                            "*/"
                         );
 
                     }
