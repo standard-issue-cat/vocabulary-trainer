@@ -340,6 +340,16 @@ button.secondary:hover {
 
 }
 
+.example-list {
+    margin-top: 10px;
+    padding-left: 22px;
+}
+
+.example-list li {
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
 
 /* ======================================================
    VOCABULARY LIST
@@ -682,10 +692,13 @@ dialog input {
 .vocab-word {
 
     color:
-        #e879f9;
+        #17a233;
 
     font-weight:
         bold;
+    
+    font-style:
+        italic;
 
 }
 
@@ -694,8 +707,7 @@ dialog input {
 .comment {
 
     color:
-        #ff9800;
-
+        #9d9993;
     font-style:
         italic;
 
