@@ -709,7 +709,7 @@ dialog input {
     color:
         #9d9993;
     font-style:
-        italic;
+        normal;
 
 }
 
@@ -735,6 +735,16 @@ dialog input {
     margin-bottom: 15px;
 
     line-height: 1.6;
+
+}
+
+.example-sentence {
+
+    font-style: italic;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
 
 }
 

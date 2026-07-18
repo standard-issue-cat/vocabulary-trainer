@@ -851,10 +851,12 @@ function showVocabulary(vocabulary) {
         vocabulary.meaning;
 
     dialogExamples.innerHTML =
-        vocabulary.examples
+    vocabulary.examples
         .map(example =>
 
-            `<p>${renderExampleHTML(example)}</p>`
+            `<p class="example-sentence">
+                ${renderExampleHTML(example)}
+            </p>`
 
         )
         .join("");
