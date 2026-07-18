@@ -844,11 +844,11 @@ function renderVocabulary() {
 
 function showVocabulary(vocabulary) {
 
-    dialogWord.textContent =
-        vocabulary.word;
+    dialogWord.innerHTML =
+    `<h2 class="dialog-word">${escapeHTML(vocabulary.word)}</h2>`;
 
-    dialogMeaning.textContent =
-        vocabulary.meaning;
+    dialogMeaning.innerHTML =
+    `<span class="dialog-label">Meaning</span><br>${escapeHTML(vocabulary.meaning)}`;
 
     dialogExamples.innerHTML =
     vocabulary.examples

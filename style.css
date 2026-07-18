@@ -748,6 +748,50 @@ dialog input {
 
 }
 
+/* ==========================================
+   Vocabulary Dialog
+========================================== */
+
+.dialog-word {
+
+    margin: 0 0 22px 0;
+
+    color: #ff5555;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+}
+
+
+.dialog-label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ff5555;
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+#dialogMeaning {
+
+    margin-bottom: 24px;
+
+}
+
 
 .vocabulary-item {
 
