@@ -68,7 +68,7 @@ function init() {
 
     if (app.languages.length === 0) {
 
-        app.languages.push("Default");
+        app.languages.push("Deutsch");
 
         save();
     }
