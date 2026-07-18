@@ -700,3 +700,44 @@ dialog input {
         italic;
 
 }
+
+#vocabularyDialog {
+
+    width: min(700px, 90vw);
+
+    background: #1c1c1c;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+}
+
+
+#dialogExamples p {
+
+    margin-bottom: 15px;
+
+    line-height: 1.6;
+
+}
+
+
+.vocabulary-item {
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+.vocabulary-item:hover {
+
+    transform: scale(1.02);
+
+}

@@ -56,6 +56,13 @@ const exportButton = document.getElementById("exportButton");
 const importButton = document.getElementById("importButton");
 const importFile = document.getElementById("importFile");
 
+// word card
+
+const vocabularyDialog = document.getElementById("vocabularyDialog");
+const dialogWord = document.getElementById("dialogWord");
+const dialogMeaning = document.getElementById("dialogMeaning");
+const dialogExamples = document.getElementById("dialogExamples");
+const dialogClose = document.getElementById("dialogClose");
 // ======================================================
 // START
 // ======================================================
@@ -110,6 +117,8 @@ function bindEvents() {
     saveLanguageButton.addEventListener("click", saveLanguage);
 
     searchInput.addEventListener("input", renderVocabulary);
+
+    dialogClose.addEventListener("click", () => vocabularyDialog.close());
 
 }
 
@@ -755,7 +764,10 @@ function renderVocabulary() {
         const card =
             document.createElement("div");
 
-
+        card.addEventListener(
+            "click",
+            () => showVocabulary(v)
+        );
         card.className =
             "vocabulary-item";
 
@@ -791,8 +803,13 @@ function renderVocabulary() {
         .querySelector(".edit")
         .addEventListener(
             "click",
-            () =>
-            editVocabulary(v.id)
+            event => {
+
+                event.stopPropagation();
+
+                editVocabulary(v.id);
+
+            }
         );
 
 
@@ -801,8 +818,13 @@ function renderVocabulary() {
         .querySelector(".delete")
         .addEventListener(
             "click",
-            () =>
-            deleteVocabulary(v.id)
+            event => {
+
+                event.stopPropagation();
+
+                deleteVocabulary(v.id);
+
+            }
         );
 
 
@@ -815,7 +837,31 @@ function renderVocabulary() {
 
 }
 
+// ======================================================
+// SHOW
+// ======================================================
 
+
+function showVocabulary(vocabulary) {
+
+    dialogWord.textContent =
+        vocabulary.word;
+
+    dialogMeaning.textContent =
+        vocabulary.meaning;
+
+    dialogExamples.innerHTML =
+        vocabulary.examples
+        .map(example =>
+
+            `<p>${renderExampleHTML(example)}</p>`
+
+        )
+        .join("");
+
+    vocabularyDialog.showModal();
+
+}
 
 // ======================================================
 // EDIT
