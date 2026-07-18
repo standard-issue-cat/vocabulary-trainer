@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "exported": "2026-07-18T18:30:01.363Z",
+    "exported": "2026-07-18T19:44:17.478Z",
     "languages": [
         "Deutsch"
     ],
@@ -10,6 +10,11 @@
             "language": "Deutsch",
             "word": "immerdar",
             "meaning": "immer, künftig, jederzeit",
+            "synonyms": [
+                "allzeit",
+                "immer"
+            ],
+            "usage": "gehoben",
             "examples": [
                 {
                     "original": "jetzt und immerdar",
@@ -27,13 +32,20 @@
                     ]
                 }
             ],
-            "created": 1784379926419
+            "created": 1784402788596
         },
         {
             "id": "fff01cae-f4a8-48a3-bb66-d6dbf1c7259f",
             "language": "Deutsch",
             "word": "zuteilwerden",
             "meaning": "gewährt, auferlegt werden; [vom Schicksal oder von einer höhergestellten Person] zugeteilt werden",
+            "synonyms": [
+                "anhängen",
+                "anheimfallen",
+                "bekommen",
+                "betreffen"
+            ],
+            "usage": "gehoben",
             "examples": [
                 {
                     "original": "ihr wurde eine hohe Ehre, ein großes Glück, ein schweres Schicksal zuteil",
@@ -101,13 +113,17 @@
                     ]
                 }
             ],
-            "created": 1784386158814
+            "created": 1784403002422
         },
         {
             "id": "39d82342-271e-4a83-ae3d-4cc38b7ac7b4",
             "language": "Deutsch",
             "word": "harren",
             "meaning": "mit bestimmter innerer Erwartung über eine gewisse Zeit hin auf ein Ereignis oder eine Person warten",
+            "synonyms": [
+                "hoffen/warten auf; (umgangssprachlich) lauern; (landschaftlich) passen"
+            ],
+            "usage": "gehoben",
             "examples": [
                 {
                     "original": "wir harrten seiner",
@@ -244,13 +260,17 @@
                     ]
                 }
             ],
-            "created": 1784394736066
+            "created": 1784403065096
         },
         {
             "id": "e150a7ec-ee0f-40c6-ba24-614f0d994e88",
             "language": "Deutsch",
             "word": "eingedenk",
             "meaning": "unter Berücksichtigung einer Sache; wegen",
+            "synonyms": [
+                "wegen"
+            ],
+            "usage": "gehoben",
             "examples": [
                 {
                     "original": "er erhielt diese Auszeichnung eingedenk seiner Verdienste",
@@ -272,13 +292,15 @@
                     ]
                 }
             ],
-            "created": 1784392951995
+            "created": 1784403227071
         },
         {
             "id": "9df480ea-cbd8-4fc7-afd8-55f2ec31cc03",
             "language": "Deutsch",
             "word": "gerüttelt",
             "meaning": "sehr, ziemlich viel [bezogen auf etwas Negatives, auf etwas als unangenehm, als Zumutung Empfundenes]",
+            "synonyms": [],
+            "usage": "normalsprachlich",
             "examples": [
                 {
                     "original": "dazu gehört ein gerüttelt Maß an/von Unverschämtheit; nach Lukas 6, 38",
@@ -344,9 +366,28 @@
                             "value": " Maß an Irrationalität, sogar ein Hang zur Panik zutage."
                         }
                     ]
+                },
+                {
+                    "original": "Für eine etwas exotischere Variante [des Gerichts] nehmen Sie statt der Kräuter ein gerüttelt Maß Currypulver und Chilipulver und vermengen das gleichmäßig mit Kartoffeln, Kürbis und Öl.",
+                    "hidden": "Für eine etwas exotischere Variante [des Gerichts] nehmen Sie statt der Kräuter ein _____ Maß Currypulver und Chilipulver und vermengen das gleichmäßig mit Kartoffeln, Kürbis und Öl.",
+                    "answer": "gerüttelt",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Für eine etwas exotischere Variante [des Gerichts] nehmen Sie statt der Kräuter ein "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "gerüttelt"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Maß Currypulver und Chilipulver und vermengen das gleichmäßig mit Kartoffeln, Kürbis und Öl."
+                        }
+                    ]
                 }
             ],
-            "created": 1784397296195
+            "created": 1784403674706
         },
         {
             "id": "87739cc7-cdd4-4cb4-b9db-6d2e60a18c11",
@@ -375,6 +416,117 @@
                 }
             ],
             "created": 1784398426696
+        },
+        {
+            "id": "7bd1ae33-c48a-44ff-8d8c-63233841b715",
+            "language": "Deutsch",
+            "word": "bedürfen",
+            "meaning": "nötig haben, [unbedingt] brauchen",
+            "synonyms": [
+                "benötigen",
+                "brauchen",
+                "haben müssen",
+                "nicht auskommen ohne"
+            ],
+            "usage": "gehoben",
+            "examples": [
+                {
+                    "original": "des Trostes, der Schonung bedürfen",
+                    "hidden": "des Trostes, der Schonung _____",
+                    "answer": "bedürfen",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "des Trostes, der Schonung "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "bedürfen"
+                        }
+                    ]
+                },
+                {
+                    "original": "nur eines Wortes bedürfen",
+                    "hidden": "nur eines Wortes _____",
+                    "answer": "bedürfen",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "nur eines Wortes "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "bedürfen"
+                        }
+                    ]
+                },
+                {
+                    "original": "Kranke bedürfen besonderer Fürsorge",
+                    "hidden": "Kranke _____ besonderer Fürsorge",
+                    "answer": "bedürfen",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Kranke "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "bedürfen"
+                        },
+                        {
+                            "type": "text",
+                            "value": " besonderer Fürsorge"
+                        }
+                    ]
+                },
+                {
+                    "original": "das bedarf keiner Erklärung = das versteht sich von selbst",
+                    "hidden": "das _____ keiner Erklärung = das versteht sich von selbst",
+                    "answer": "bedarf",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "das "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "bedarf"
+                        },
+                        {
+                            "type": "text",
+                            "value": " keiner Erklärung "
+                        },
+                        {
+                            "type": "comment",
+                            "value": "= das versteht sich von selbst"
+                        }
+                    ]
+                },
+                {
+                    "original": "selten auch mit dem Akkusativ: dazu bedarf es viel Geld",
+                    "hidden": "selten auch mit dem Akkusativ: dazu _____ es viel Geld",
+                    "answer": "bedarf",
+                    "parts": [
+                        {
+                            "type": "comment",
+                            "value": "selten auch mit dem Akkusativ:"
+                        },
+                        {
+                            "type": "text",
+                            "value": " dazu "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "bedarf"
+                        },
+                        {
+                            "type": "text",
+                            "value": " es viel Geld"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784403843854
         }
     ]
 }
