@@ -955,6 +955,20 @@ function convertBackToBrackets(example) {
 
                     }
 
+                    if (
+                        part.type === "comment"
+                    ) {
+
+                        return (
+                            "["
+                            +
+                            part.value
+                            +
+                            "]"
+                        );
+
+                    }
+
 
                     return part.value;
 
@@ -1460,7 +1474,10 @@ function parseBrackets(text) {
                 :
                 p.value
             )
-            .join("")
+            .join(""),
+
+        parts:
+            parts
 
     };
 
