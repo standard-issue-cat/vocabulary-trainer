@@ -282,7 +282,7 @@ function createExampleField(value = "") {
     textarea.rows = 3;
 
     textarea.placeholder =
-        "Ich {mache} heute bei dem Spiel {mit}.";
+        "Ich {mache} heute bei dem Spiel {mit}. [Optionaler Kommentar]";
 
     textarea.className = "example";
 
