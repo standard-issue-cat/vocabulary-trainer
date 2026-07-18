@@ -65,6 +65,22 @@
             placeholder="to participate"
         >
 
+        <label for="synonymsInput">Synonyms</label>
+
+        <input 
+            id="synonymsInput"
+            placeholder="z.B. laufen, rennen, schreiten"
+        >
+
+
+        <label for="usageInput">Usage</label>
+
+        <input
+            id="usageInput"
+            type="text"
+            placeholder="normalsprachlich"
+        ></input>
+
         <label>Examples</label>
 
         <div id="exampleContainer">
@@ -219,11 +235,31 @@
 
     <div class="dialog-section">
         <div class="dialog-label">
+            Usage
+        </div>
+
+        <p id="dialogUsage"></p>
+
+    </div>
+
+    <div class="dialog-section">
+        <div class="dialog-label">
             Meaning
         </div>
 
         <p id="dialogMeaning" class="dialog-meaning"></p>
     </div>
+
+    <div class="dialog-section">
+
+        <div class="dialog-label">
+            Synonyms
+        </div>
+
+        <p id="dialogSynonyms"></p>
+
+    </div>
+
 
     <div class="dialog-section">
         <div class="dialog-label">

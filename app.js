@@ -42,6 +42,8 @@ const cancelLanguageButton = document.getElementById("cancelLanguageButton");
 
 const wordInput = document.getElementById("wordInput");
 const meaningInput = document.getElementById("meaningInput");
+const synonymsInput = document.getElementById("synonymsInput");
+const usageInput = document.getElementById("usageInput");
 const exampleContainer = document.getElementById("exampleContainer");
 
 const saveButton = document.getElementById("saveButton");
@@ -61,8 +63,11 @@ const importFile = document.getElementById("importFile");
 const vocabularyDialog = document.getElementById("vocabularyDialog");
 const dialogWord = document.getElementById("dialogWord");
 const dialogMeaning = document.getElementById("dialogMeaning");
+const dialogSynonyms = document.getElementById("dialogSynonyms");
+const dialogUsage = document.getElementById("dialogUsage");
 const dialogExamples = document.getElementById("dialogExamples");
 const dialogClose = document.getElementById("dialogClose");
+
 // ======================================================
 // START
 // ======================================================
@@ -375,6 +380,15 @@ function saveVocabulary() {
     const meaning =
         meaningInput.value.trim();
 
+    const synonyms =
+        synonymsInput.value
+        .split(",")
+        .map(s => s.trim())
+        .filter(s => s.length > 0);
+
+
+    const usage =
+        usageInput.value.trim();
 
     if (!word || !meaning) {
 
@@ -433,6 +447,10 @@ function saveVocabulary() {
         word,
 
         meaning,
+
+        synonyms,
+
+        usage,
 
         examples:
             examples.map(parseExample),
@@ -684,6 +702,10 @@ function resetEditor() {
 
     meaningInput.value = "";
 
+    synonymsInput.value = "";
+
+    usageInput.value = "";
+
     exampleContainer.innerHTML = "";
 
 
@@ -849,6 +871,24 @@ function showVocabulary(vocabulary) {
     dialogMeaning.innerHTML =
         escapeHTML(vocabulary.meaning);
 
+    dialogSynonyms.innerHTML =
+    vocabulary.synonyms &&
+    vocabulary.synonyms.length > 0
+        ?
+        escapeHTML(
+            vocabulary.synonyms.join(", ")
+        )
+        :
+        "-";
+
+
+    dialogUsage.innerHTML =
+        vocabulary.usage
+            ?
+            escapeHTML(vocabulary.usage)
+            :
+            "-";
+
     dialogExamples.innerHTML =
         vocabulary.examples
             .map(example =>
@@ -897,7 +937,12 @@ function editVocabulary(id) {
     meaningInput.value =
         vocabulary.meaning;
 
+    synonymsInput.value =
+        (vocabulary.synonyms ?? []).join(", ");
 
+
+    usageInput.value =
+        vocabulary.usage ?? "";
 
     exampleContainer.innerHTML =
         "";
