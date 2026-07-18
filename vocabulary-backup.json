@@ -1,0 +1,380 @@
+{
+    "version": 1,
+    "exported": "2026-07-18T18:30:01.363Z",
+    "languages": [
+        "Deutsch"
+    ],
+    "vocabulary": [
+        {
+            "id": "524927c7-66ee-45cc-8424-26992320ea3c",
+            "language": "Deutsch",
+            "word": "immerdar",
+            "meaning": "immer, künftig, jederzeit",
+            "examples": [
+                {
+                    "original": "jetzt und immerdar",
+                    "hidden": "jetzt und _____",
+                    "answer": "immerdar",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "jetzt und "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "immerdar"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784379926419
+        },
+        {
+            "id": "fff01cae-f4a8-48a3-bb66-d6dbf1c7259f",
+            "language": "Deutsch",
+            "word": "zuteilwerden",
+            "meaning": "gewährt, auferlegt werden; [vom Schicksal oder von einer höhergestellten Person] zugeteilt werden",
+            "examples": [
+                {
+                    "original": "ihr wurde eine hohe Ehre, ein großes Glück, ein schweres Schicksal zuteil",
+                    "hidden": "ihr _____ eine hohe Ehre, ein großes Glück, ein schweres Schicksal _____",
+                    "answer": "wurde zuteil",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ihr "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "wurde"
+                        },
+                        {
+                            "type": "text",
+                            "value": " eine hohe Ehre, ein großes Glück, ein schweres Schicksal "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "zuteil"
+                        }
+                    ]
+                },
+                {
+                    "original": "den Kindern eine gute Erziehung zuteilwerden lassen",
+                    "hidden": "den Kindern eine gute Erziehung _____ lassen",
+                    "answer": "zuteilwerden",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "den Kindern eine gute Erziehung "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "zuteilwerden"
+                        },
+                        {
+                            "type": "text",
+                            "value": " lassen"
+                        }
+                    ]
+                },
+                {
+                    "original": "dem Buch wurde wenig Beachtung zuteil",
+                    "hidden": "dem Buch _____ wenig Beachtung _____",
+                    "answer": "wurde zuteil",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "dem Buch "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "wurde"
+                        },
+                        {
+                            "type": "text",
+                            "value": " wenig Beachtung "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "zuteil"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784386158814
+        },
+        {
+            "id": "39d82342-271e-4a83-ae3d-4cc38b7ac7b4",
+            "language": "Deutsch",
+            "word": "harren",
+            "meaning": "mit bestimmter innerer Erwartung über eine gewisse Zeit hin auf ein Ereignis oder eine Person warten",
+            "examples": [
+                {
+                    "original": "wir harrten seiner",
+                    "hidden": "wir _____ seiner",
+                    "answer": "harrten",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "wir "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "harrten"
+                        },
+                        {
+                            "type": "text",
+                            "value": " seiner"
+                        }
+                    ]
+                },
+                {
+                    "original": "man harrte auf Nachzügler",
+                    "hidden": "man _____ auf Nachzügler",
+                    "answer": "harrte",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "man "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "harrte"
+                        },
+                        {
+                            "type": "text",
+                            "value": " auf Nachzügler"
+                        }
+                    ]
+                },
+                {
+                    "original": "sie harrte vergeblich",
+                    "hidden": "sie _____ vergeblich",
+                    "answer": "harrte",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "sie "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "harrte"
+                        },
+                        {
+                            "type": "text",
+                            "value": " vergeblich"
+                        }
+                    ]
+                },
+                {
+                    "original": "in übertragener Bedeutung: neue Aufgaben harren seiner",
+                    "hidden": "in übertragener Bedeutung: neue Aufgaben _____ seiner",
+                    "answer": "harren",
+                    "parts": [
+                        {
+                            "type": "comment",
+                            "value": "in übertragener Bedeutung:"
+                        },
+                        {
+                            "type": "text",
+                            "value": " neue Aufgaben "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "harren"
+                        },
+                        {
+                            "type": "text",
+                            "value": " seiner"
+                        }
+                    ]
+                },
+                {
+                    "original": "in übertragener Bedeutung: diese Angelegenheit harrt der Erledigung (= sollte, müsste erledigt werden)",
+                    "hidden": "in übertragener Bedeutung: diese Angelegenheit _____ der Erledigung (= sollte, müsste erledigt werden)",
+                    "answer": "harrt",
+                    "parts": [
+                        {
+                            "type": "comment",
+                            "value": "in übertragener Bedeutung:"
+                        },
+                        {
+                            "type": "text",
+                            "value": " diese Angelegenheit "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "harrt"
+                        },
+                        {
+                            "type": "text",
+                            "value": " der Erledigung "
+                        },
+                        {
+                            "type": "comment",
+                            "value": "(= sollte, müsste erledigt werden)"
+                        }
+                    ]
+                },
+                {
+                    "original": "in übertragener Bedeutung: es harren noch einige schwierige Probleme der Lösung (= sollten gelöst werden)",
+                    "hidden": "in übertragener Bedeutung: es _____ noch einige schwierige Probleme der Lösung (= sollten gelöst werden)",
+                    "answer": "harren",
+                    "parts": [
+                        {
+                            "type": "comment",
+                            "value": "in übertragener Bedeutung:"
+                        },
+                        {
+                            "type": "text",
+                            "value": " es "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "harren"
+                        },
+                        {
+                            "type": "text",
+                            "value": " noch einige schwierige Probleme der Lösung "
+                        },
+                        {
+                            "type": "comment",
+                            "value": "(= sollten gelöst werden)"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784394736066
+        },
+        {
+            "id": "e150a7ec-ee0f-40c6-ba24-614f0d994e88",
+            "language": "Deutsch",
+            "word": "eingedenk",
+            "meaning": "unter Berücksichtigung einer Sache; wegen",
+            "examples": [
+                {
+                    "original": "er erhielt diese Auszeichnung eingedenk seiner Verdienste",
+                    "hidden": "er erhielt diese Auszeichnung _____ seiner Verdienste",
+                    "answer": "eingedenk",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "er erhielt diese Auszeichnung "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "eingedenk"
+                        },
+                        {
+                            "type": "text",
+                            "value": " seiner Verdienste"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784392951995
+        },
+        {
+            "id": "9df480ea-cbd8-4fc7-afd8-55f2ec31cc03",
+            "language": "Deutsch",
+            "word": "gerüttelt",
+            "meaning": "sehr, ziemlich viel [bezogen auf etwas Negatives, auf etwas als unangenehm, als Zumutung Empfundenes]",
+            "examples": [
+                {
+                    "original": "dazu gehört ein gerüttelt Maß an/von Unverschämtheit; nach Lukas 6, 38",
+                    "hidden": "dazu gehört ein _____ Maß an/von Unverschämtheit; nach Lukas 6, 38",
+                    "answer": "gerüttelt",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "dazu gehört ein "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "gerüttelt"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Maß "
+                        },
+                        {
+                            "type": "comment",
+                            "value": "an/von"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Unverschämtheit; nach Lukas 6, 38"
+                        }
+                    ]
+                },
+                {
+                    "original": "Die Kirchen haben ein gerüttelt Maß an Mitschuld.",
+                    "hidden": "Die Kirchen haben ein _____ Maß an Mitschuld.",
+                    "answer": "gerüttelt",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Die Kirchen haben ein "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "gerüttelt"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Maß an Mitschuld."
+                        }
+                    ]
+                },
+                {
+                    "original": "Bei solchen Debatten tritt ein gerüttelt Maß an Irrationalität, sogar ein Hang zur Panik zutage.",
+                    "hidden": "Bei solchen Debatten tritt ein _____ Maß an Irrationalität, sogar ein Hang zur Panik zutage.",
+                    "answer": "gerüttelt",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Bei solchen Debatten tritt ein "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "gerüttelt"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Maß an Irrationalität, sogar ein Hang zur Panik zutage."
+                        }
+                    ]
+                }
+            ],
+            "created": 1784397296195
+        },
+        {
+            "id": "87739cc7-cdd4-4cb4-b9db-6d2e60a18c11",
+            "language": "Deutsch",
+            "word": "willen",
+            "meaning": "um jemandes, einer Sache willen (jemandem, einer Sache zuliebe; mit Rücksicht auf jemanden, etwas; im Interesse einer Person, Sache",
+            "examples": [
+                {
+                    "original": "er hat es um seines Bruders, seiner selbst, des lieben Friedens willen getan)",
+                    "hidden": "er hat es um seines Bruders, seiner selbst, des lieben Friedens _____ getan)",
+                    "answer": "willen",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "er hat es um seines Bruders, seiner selbst, des lieben Friedens "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "willen"
+                        },
+                        {
+                            "type": "text",
+                            "value": " getan)"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784398426696
+        }
+    ]
+}
