@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vocabulary Trainer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Vocabulary Trainer</h1>
+
+    <nav>
+        <button id="tabEditor" class="active">
+            Vocabulary
+        </button>
+
+        <button id="tabPractice">
+            Practice
+        </button>
+    </nav>
+</header>
+
+<main>
+
+<!-- ===================================================== -->
+<!-- EDITOR -->
+<!-- ===================================================== -->
+
+<section id="editorPage">
+
+    <div class="card">
+
+        <h2>Add Vocabulary</h2>
+
+        <label>Language / Category</label>
+
+        <div class="row">
+
+            <select id="languageSelect">
+            </select>
+
+            <button id="newLanguageButton">
+                +
+            </button>
+
+        </div>
+
+        <label>Word</label>
+
+        <input
+            id="wordInput"
+            type="text"
+            placeholder="mitmachen"
+        >
+
+        <label>Meaning</label>
+
+        <input
+            id="meaningInput"
+            type="text"
+            placeholder="to participate"
+        >
+
+        <h3>Example sentences</h3>
+
+        <p class="hint">
+            Put the hidden word(s) inside {curly brackets}.<br>
+            Example:<br>
+            Ich {mache} heute {mit}.
+        </p>
+
+        <div id="exampleContainer">
+        </div>
+
+        <button id="addExampleButton">
+            + Example sentence
+        </button>
+
+        <br><br>
+
+        <button id="saveButton">
+            Save Vocabulary
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Vocabulary</h2>
+
+        <input
+            id="searchInput"
+            placeholder="Search..."
+            type="text"
+        >
+
+        <div id="vocabularyList">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- PRACTICE -->
+<!-- ===================================================== -->
+
+<section
+    id="practicePage"
+    class="hidden"
+>
+
+    <div class="card">
+
+        <h2>Practice</h2>
+
+        <label>Language</label>
+
+        <select id="practiceLanguage">
+        </select>
+
+        <br><br>
+
+        <label>Mode</label>
+
+        <select id="practiceMode">
+
+            <option value="meaning">
+                Meaning → Word
+            </option>
+
+            <option value="word">
+                Word → Meaning
+            </option>
+
+            <option value="expert">
+                Expert
+            </option>
+
+        </select>
+
+        <br><br>
+
+        <button id="startPractice">
+            Start Practice
+        </button>
+
+    </div>
+
+    <div
+        id="practiceCard"
+        class="card hidden"
+    >
+
+        <h2 id="practiceTitle">
+        </h2>
+
+        <div id="questionArea">
+
+        </div>
+
+        <input
+            id="answerInput"
+            type="text"
+            autocomplete="off"
+            placeholder="Your answer..."
+        >
+
+        <div class="buttons">
+
+            <button id="showAnswerButton">
+                Show Answer
+            </button>
+
+            <button id="nextButton">
+                Next
+            </button>
+
+        </div>
+
+        <div id="answerArea">
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ===================================================== -->
+<!-- NEW LANGUAGE DIALOG -->
+<!-- ===================================================== -->
+
+<dialog id="languageDialog">
+
+    <h2>New Language</h2>
+
+    <input
+        id="newLanguageInput"
+        placeholder="Nahuatl"
+        type="text"
+    >
+
+    <br><br>
+
+    <button id="saveLanguageButton">
+        Save
+    </button>
+
+    <button id="cancelLanguageButton">
+        Cancel
+    </button>
+
+</dialog>
+
+<!-- ===================================================== -->
+<!-- IMPORT / EXPORT -->
+<!-- ===================================================== -->
+
+<footer>
+
+    <button id="exportButton">
+        Export JSON
+    </button>
+
+    <button id="importButton">
+        Import JSON
+    </button>
+
+    <input
+        type="file"
+        id="importFile"
+        accept=".json"
+        hidden
+    >
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
