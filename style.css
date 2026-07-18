@@ -756,7 +756,7 @@ dialog input {
 
     margin: 0 0 22px 0;
 
-    color: #ff5555;
+    color: #ca1111;
 
     font-size: 2rem;
 
@@ -767,13 +767,20 @@ dialog input {
 }
 
 
+.dialog-section {
+
+    margin-bottom: 24px;
+
+}
+
+
 .dialog-label {
 
     display: block;
 
     margin-bottom: 8px;
 
-    color: #ff5555;
+    color: #55a4ff;
 
     font-size: 0.9rem;
 
@@ -786,9 +793,39 @@ dialog input {
 }
 
 
-#dialogMeaning {
+.dialog-meaning {
 
-    margin-bottom: 24px;
+    margin: 0;
+
+    line-height: 1.5;
+
+}
+
+
+/* Examples */
+
+.dialog-examples {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+.dialog-example {
+
+    padding: 12px 14px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border-left: 3px solid #ca1111;
+
+    border-radius: 6px;
+
+    line-height: 1.5;
 
 }
 

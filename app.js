@@ -845,21 +845,19 @@ function renderVocabulary() {
 function showVocabulary(vocabulary) {
 
     dialogWord.innerHTML =
-    `<h2 class="dialog-word">${escapeHTML(vocabulary.word)}</h2>`;
+        escapeHTML(vocabulary.word);
 
     dialogMeaning.innerHTML =
-    `<span class="dialog-label">Meaning</span><br>${escapeHTML(vocabulary.meaning)}`;
+        escapeHTML(vocabulary.meaning);
 
     dialogExamples.innerHTML =
-    vocabulary.examples
-        .map(example =>
-
-            `<p class="example-sentence">
-                ${renderExampleHTML(example)}
-            </p>`
-
-        )
-        .join("");
+        vocabulary.examples
+            .map(example =>
+                `<div class="dialog-example">
+                    ${renderExampleHTML(example)}
+                </div>`
+            )
+            .join("");
 
     vocabularyDialog.showModal();
 
