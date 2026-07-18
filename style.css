@@ -318,7 +318,11 @@ button.secondary:hover {
 
 }
 
+#dialogClose {
 
+    margin-top: 25px;
+
+}
 
 /* ======================================================
    EXAMPLES
