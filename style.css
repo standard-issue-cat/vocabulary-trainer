@@ -627,3 +627,49 @@ dialog input {
 
 
 }
+
+/* ======================================================
+   EXPERT MODE HINT
+====================================================== */
+
+
+.meaning-hint {
+
+    background:
+        #222;
+
+    border-left:
+        4px solid #8b0000;
+
+    padding:
+        15px;
+
+    margin-bottom:
+        25px;
+
+    border-radius:
+        8px;
+
+    text-align:
+        left;
+
+}
+
+
+.meaning-hint strong {
+
+    color:
+        #ff5555;
+
+}
+
+
+.meaning-hint p {
+
+    margin:
+        8px 0 0 0;
+
+    color:
+        #ddd;
+
+}
