@@ -1035,6 +1035,20 @@ function renderExampleHTML(example) {
 
                 }
 
+                if (
+                    part.type === "comment"
+                ) {
+
+                    return `
+
+                    <span class="comment">
+                    ${escapeHTML(part.value)}
+                    </span>
+
+                    `;
+
+                }
+
 
 
                 return escapeHTML(
