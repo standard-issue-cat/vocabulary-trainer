@@ -1,0 +1,629 @@
+/* ======================================================
+   Vocabulary Trainer
+   style.css
+====================================================== */
+
+
+/* ======================================================
+   GLOBAL
+====================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        #111;
+
+    color:
+        #eee;
+
+}
+
+
+button,
+input,
+textarea,
+select {
+
+    font:
+        inherit;
+
+}
+
+
+
+button {
+
+    cursor: pointer;
+
+}
+
+
+/* ======================================================
+   LAYOUT
+====================================================== */
+
+header {
+
+    background:
+        #1b1b1b;
+
+    padding:
+        20px;
+
+    text-align:
+        center;
+
+    border-bottom:
+        1px solid #333;
+
+}
+
+
+h1 {
+
+    margin:
+        0;
+
+    color:
+        #fff;
+
+}
+
+
+
+main {
+
+    max-width:
+        1000px;
+
+    margin:
+        30px auto;
+
+    padding:
+        20px;
+
+}
+
+
+/* ======================================================
+   TABS
+====================================================== */
+
+
+.tabs {
+
+    display:
+        flex;
+
+    gap:
+        10px;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+
+.tab {
+
+    flex:
+        1;
+
+    padding:
+        14px;
+
+    border:
+        none;
+
+    background:
+        #222;
+
+    color:
+        #aaa;
+
+    border-radius:
+        8px;
+
+}
+
+
+
+.tab:hover {
+
+    background:
+        #333;
+
+}
+
+
+
+.tab.active {
+
+    background:
+        #8b0000;
+
+    color:
+        white;
+
+}
+
+
+/* ======================================================
+   PAGES
+====================================================== */
+
+
+.hidden {
+
+    display:
+        none;
+
+}
+
+
+
+/* ======================================================
+   FORMS
+====================================================== */
+
+
+.section {
+
+    background:
+        #1a1a1a;
+
+    padding:
+        20px;
+
+    border-radius:
+        12px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+label {
+
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+
+    color:
+        #ccc;
+
+}
+
+
+
+input,
+textarea,
+select {
+
+    width:
+        100%;
+
+    padding:
+        12px;
+
+    background:
+        #222;
+
+    color:
+        white;
+
+    border:
+        1px solid #444;
+
+    border-radius:
+        8px;
+
+}
+
+
+
+textarea {
+
+    resize:
+        vertical;
+
+    min-height:
+        80px;
+
+}
+
+
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    outline:
+        none;
+
+    border-color:
+        #b00000;
+
+}
+
+
+
+/* ======================================================
+   BUTTONS
+====================================================== */
+
+
+button {
+
+    padding:
+        10px 16px;
+
+    border:
+        none;
+
+    border-radius:
+        8px;
+
+    background:
+        #8b0000;
+
+    color:
+        white;
+
+}
+
+
+
+button:hover {
+
+    background:
+        #b00000;
+
+}
+
+
+
+button.secondary {
+
+    background:
+        #333;
+
+}
+
+
+button.secondary:hover {
+
+    background:
+        #444;
+
+}
+
+
+
+/* ======================================================
+   EXAMPLES
+====================================================== */
+
+
+.example-wrapper {
+
+    margin-bottom:
+        10px;
+
+}
+
+
+#exampleContainer textarea {
+
+    margin-bottom:
+        10px;
+
+}
+
+
+/* ======================================================
+   VOCABULARY LIST
+====================================================== */
+
+
+#vocabularyList {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fill,
+            minmax(260px,1fr)
+        );
+
+    gap:
+        15px;
+
+}
+
+
+
+.vocabulary-item {
+
+    background:
+        #1c1c1c;
+
+    padding:
+        18px;
+
+    border-radius:
+        12px;
+
+    border:
+        1px solid #333;
+
+}
+
+
+
+.vocabulary-item h3 {
+
+    margin-top:
+        0;
+
+    color:
+        white;
+
+}
+
+
+
+.vocabulary-item small {
+
+    color:
+        #999;
+
+}
+
+
+
+.vocabulary-item button {
+
+    margin-right:
+        8px;
+
+}
+
+
+/* ======================================================
+   SEARCH
+====================================================== */
+
+
+#searchInput {
+
+    margin-bottom:
+        20px;
+
+}
+
+
+
+/* ======================================================
+   PRACTICE
+====================================================== */
+
+
+#practiceCard {
+
+    background:
+        #1a1a1a;
+
+    padding:
+        30px;
+
+    border-radius:
+        15px;
+
+    text-align:
+        center;
+
+}
+
+
+
+#practiceTitle {
+
+    color:
+        #ff4444;
+
+}
+
+
+
+.question {
+
+    font-size:
+        1.5rem;
+
+    margin:
+        30px 0;
+
+}
+
+
+
+#answerInput {
+
+    max-width:
+        500px;
+
+    margin:
+        20px auto;
+
+}
+
+
+
+#answerArea {
+
+    margin-top:
+        20px;
+
+}
+
+
+
+.correct {
+
+    color:
+        #55ff55;
+
+    font-size:
+        1.2rem;
+
+}
+
+
+
+.wrong {
+
+    color:
+        #ff5555;
+
+    font-size:
+        1.2rem;
+
+}
+
+
+
+/* ======================================================
+   DIALOG
+====================================================== */
+
+
+dialog {
+
+    background:
+        #1b1b1b;
+
+    color:
+        white;
+
+    border:
+        1px solid #444;
+
+    border-radius:
+        12px;
+
+    padding:
+        25px;
+
+}
+
+
+
+dialog::backdrop {
+
+    background:
+        rgba(
+            0,
+            0,
+            0,
+            0.7
+        );
+
+}
+
+
+
+dialog input {
+
+    margin:
+        15px 0;
+
+}
+
+
+
+/* ======================================================
+   IMPORT EXPORT
+====================================================== */
+
+
+.import-export {
+
+    display:
+        flex;
+
+    gap:
+        10px;
+
+    margin-top:
+        20px;
+
+}
+
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+
+@media(max-width:700px) {
+
+
+    main {
+
+        padding:
+            10px;
+
+    }
+
+
+
+    .tabs {
+
+        flex-direction:
+            column;
+
+    }
+
+
+
+    #vocabularyList {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+
+    .import-export {
+
+        flex-direction:
+            column;
+
+    }
+
+
+}
