@@ -1,10 +1,648 @@
 {
     "version": 1,
-    "exported": "2026-07-18T19:44:17.478Z",
+    "exported": "2026-07-19T18:33:17.326Z",
     "languages": [
         "Deutsch"
     ],
     "vocabulary": [
+        {
+            "id": "dcfecf41-f261-4cd9-a44a-0dd850df7765",
+            "language": "Deutsch",
+            "word": "ver­seh­ren",
+            "meaning": "verletzen, beschädigen",
+            "synonyms": [
+                "lädieren",
+                "verletzen",
+                "verwunden",
+                "wehtun"
+            ],
+            "usage": "gehoben",
+            "examples": [
+                {
+                    "original": "jemanden versehren",
+                    "hidden": "jemanden _____",
+                    "answer": "versehren",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "jemanden "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "versehren"
+                        }
+                    ]
+                },
+                {
+                    "original": "versehrte Körperteile",
+                    "hidden": "_____ Körperteile",
+                    "answer": "versehrte",
+                    "parts": [
+                        {
+                            "type": "answer",
+                            "value": "versehrte"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Körperteile"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784481885176
+        },
+        {
+            "id": "e5a45634-4394-4ca4-ba37-29065c3b4c97",
+            "language": "Deutsch",
+            "word": "Ge­fach, das",
+            "meaning": "durch Balken begrenztes Feld beim Fachwerkbau",
+            "synonyms": [],
+            "usage": "Bauwesen, Holzfachwerkbau; Plural nur Gefache",
+            "examples": [
+                {
+                    "original": "Ein Gefach bezeichnet im Holzfachwerkbau das Feld zwischen den Holzbalken einer Wand, das durch Ausfachung, Fenster oder Tür geschlossen wird.",
+                    "hidden": "Ein _____ bezeichnet im Holzfachwerkbau das Feld zwischen den Holzbalken einer Wand, das durch Ausfachung, Fenster oder Tür geschlossen wird.",
+                    "answer": "Gefach",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Ein "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Gefach"
+                        },
+                        {
+                            "type": "text",
+                            "value": " bezeichnet im Holzfachwerkbau das Feld zwischen den Holzbalken einer Wand, das durch Ausfachung, Fenster oder Tür geschlossen wird."
+                        }
+                    ]
+                },
+                {
+                    "original": "Die einzelnen Gefache zwischen dem Wandgerüst sind in älterer Zeit durchweg mit Flechtwerk ausgefüllt, das beiderseits mit Lehmbewurf gedichtet wurde. […] Mehr und mehr hat sich aber daneben die Ausmauerung der Gefache eingebürgert.",
+                    "hidden": "Die einzelnen _____ zwischen dem Wandgerüst sind in älterer Zeit durchweg mit Flechtwerk ausgefüllt, das beiderseits mit Lehmbewurf gedichtet wurde. […] Mehr und mehr hat sich aber daneben die Ausmauerung der _____ eingebürgert.",
+                    "answer": "Gefache Gefache",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Die einzelnen "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Gefache"
+                        },
+                        {
+                            "type": "text",
+                            "value": " zwischen dem Wandgerüst sind in älterer Zeit durchweg mit Flechtwerk ausgefüllt, das beiderseits mit Lehmbewurf gedichtet wurde. […] Mehr und mehr hat sich aber daneben die Ausmauerung der "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Gefache"
+                        },
+                        {
+                            "type": "text",
+                            "value": " eingebürgert."
+                        }
+                    ]
+                }
+            ],
+            "created": 1784480795657
+        },
+        {
+            "id": "b4fc1f6f-a196-4f2f-8d11-831c5963bc66",
+            "language": "Deutsch",
+            "word": "un­ent­wegt",
+            "meaning": "stetig, beharrlich, unermüdlich; mit gleichmäßiger Ausdauer bei etwas bleibend, durchhaltend",
+            "synonyms": [
+                "ausdauernd",
+                "beharrlich",
+                "durchhaltend",
+                "hartnäckig"
+            ],
+            "usage": "normalsprachlich",
+            "examples": [
+                {
+                    "original": "ein unentwegter Kämpfer",
+                    "hidden": "ein _____ Kämpfer",
+                    "answer": "unentwegter",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ein "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "unentwegter"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Kämpfer"
+                        }
+                    ]
+                },
+                {
+                    "original": "ihr unentwegter Einsatz",
+                    "hidden": "ihr _____ Einsatz",
+                    "answer": "unentwegter",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ihr "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "unentwegter"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Einsatz"
+                        }
+                    ]
+                },
+                {
+                    "original": "unentwegt weiterarbeiten, an etwas festhalten",
+                    "hidden": "_____ weiterarbeiten, an etwas festhalten",
+                    "answer": "unentwegt",
+                    "parts": [
+                        {
+                            "type": "answer",
+                            "value": "unentwegt"
+                        },
+                        {
+                            "type": "text",
+                            "value": " weiterarbeiten, an etwas festhalten"
+                        }
+                    ]
+                },
+                {
+                    "original": "er sah sie unentwegt (ohne Unterbrechung) an",
+                    "hidden": "er sah sie _____ (ohne Unterbrechung) an",
+                    "answer": "unentwegt",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "er sah sie "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "unentwegt"
+                        },
+                        {
+                            "type": "text",
+                            "value": " "
+                        },
+                        {
+                            "type": "comment",
+                            "value": "(ohne Unterbrechung)"
+                        },
+                        {
+                            "type": "text",
+                            "value": " an"
+                        }
+                    ]
+                },
+                {
+                    "original": "das Telefon läutete unentwegt (ununterbrochen)",
+                    "hidden": "das Telefon läutete _____ (ununterbrochen)",
+                    "answer": "unentwegt",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "das Telefon läutete "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "unentwegt"
+                        },
+                        {
+                            "type": "text",
+                            "value": " "
+                        },
+                        {
+                            "type": "comment",
+                            "value": "(ununterbrochen)"
+                        }
+                    ]
+                },
+                {
+                    "original": "substantiviert:nur ein paar Unentwegte waren geblieben",
+                    "hidden": "substantiviert:nur ein paar _____ waren geblieben",
+                    "answer": "Unentwegte",
+                    "parts": [
+                        {
+                            "type": "comment",
+                            "value": "substantiviert:"
+                        },
+                        {
+                            "type": "text",
+                            "value": "nur ein paar "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Unentwegte"
+                        },
+                        {
+                            "type": "text",
+                            "value": " waren geblieben"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784479762185
+        },
+        {
+            "id": "8edd308e-1a58-4b8c-a748-eb66e4bde616",
+            "language": "Deutsch",
+            "word": "glim­men",
+            "meaning": "ohne Flamme schwach brennen; schwach glühen",
+            "synonyms": [
+                "schwach brennen/glühen",
+                "schwelen; (süddeutsch",
+                "schweizerisch) motten"
+            ],
+            "usage": "gehoben; es glomm, auch glimmte; es glömme, auch glimmte; geglommen, auch geglimmt; glimm[e]!",
+            "examples": [
+                {
+                    "original": "die Zigaretten glommen (gehoben)/glimmten in der Dunkelheit",
+                    "hidden": "die Zigaretten _____ (gehoben)/_____ in der Dunkelheit",
+                    "answer": "glommen glimmten",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "die Zigaretten "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "glommen"
+                        },
+                        {
+                            "type": "text",
+                            "value": " (gehoben)/"
+                        },
+                        {
+                            "type": "answer",
+                            "value": "glimmten"
+                        },
+                        {
+                            "type": "text",
+                            "value": " in der Dunkelheit"
+                        }
+                    ]
+                },
+                {
+                    "original": "unter der Asche hat noch das Feuer geglommen (gehoben)/geglimmt",
+                    "hidden": "unter der Asche hat noch das Feuer _____ (gehoben)/_____",
+                    "answer": "geglommen geglimmt",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "unter der Asche hat noch das Feuer "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "geglommen"
+                        },
+                        {
+                            "type": "text",
+                            "value": " (gehoben)/"
+                        },
+                        {
+                            "type": "answer",
+                            "value": "geglimmt"
+                        }
+                    ]
+                },
+                {
+                    "original": "in übertragener Bedeutung: eine letzte Hoffnung glomm noch in ihr",
+                    "hidden": "in übertragener Bedeutung: eine letzte Hoffnung _____ noch in ihr",
+                    "answer": "glomm",
+                    "parts": [
+                        {
+                            "type": "comment",
+                            "value": "in übertragener Bedeutung:"
+                        },
+                        {
+                            "type": "text",
+                            "value": " eine letzte Hoffnung "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "glomm"
+                        },
+                        {
+                            "type": "text",
+                            "value": " noch in ihr"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784479159084
+        },
+        {
+            "id": "7b4c5650-c0ff-4080-a287-d735bab656fc",
+            "language": "Deutsch",
+            "word": "un­ver­se­hens",
+            "meaning": "plötzlich, ohne dass es vorauszusehen war",
+            "synonyms": [
+                "auf einmal",
+                "mit einem Mal",
+                "plötzlich",
+                "schlagartig"
+            ],
+            "usage": "normalsprachlich",
+            "examples": [
+                {
+                    "original": "das Gewitter brach unversehens herein",
+                    "hidden": "das Gewitter brach _____ herein",
+                    "answer": "unversehens",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "das Gewitter brach "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "unversehens"
+                        },
+                        {
+                            "type": "text",
+                            "value": " herein"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784478204097
+        },
+        {
+            "id": "00da1530-c293-45d9-ae51-dc3552ce3f10",
+            "language": "Deutsch",
+            "word": "Tau, das",
+            "meaning": "starkes Seil (besonders zum Festmachen von Schiffen o. Ä.)",
+            "synonyms": [
+                "Leine",
+                "Schnur",
+                "Seil",
+                "Strang"
+            ],
+            "usage": "normalsprachlich; Grammatik: das Tau; Genitiv: des Tau[e]s, Plural: die Taue",
+            "examples": [
+                {
+                    "original": "ein kräftiges, dickes, starkes Tau",
+                    "hidden": "ein kräftiges, dickes, starkes _____",
+                    "answer": "Tau",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ein kräftiges, dickes, starkes "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Tau"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784475681100
+        },
+        {
+            "id": "1eaee057-e1e0-4aec-aba3-88571730fcb8",
+            "language": "Deutsch",
+            "word": "zei­hen",
+            "meaning": "bezichtigen, beschuldigen",
+            "synonyms": [
+                "anklagen",
+                "anschuldigen",
+                "beschuldigen",
+                "bezichtigen"
+            ],
+            "usage": "gehoben",
+            "examples": [
+                {
+                    "original": "jemanden des Verrats, der Heuchelei, der Feigheit, einer Lüge zeihen",
+                    "hidden": "jemanden des Verrats, der Heuchelei, der Feigheit, einer Lüge _____",
+                    "answer": "zeihen",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "jemanden des Verrats, der Heuchelei, der Feigheit, einer Lüge "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "zeihen"
+                        }
+                    ]
+                },
+                {
+                    "original": "sie zieh ihn der Lüge",
+                    "hidden": "sie _____ ihn der Lüge",
+                    "answer": "zieh",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "sie "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "zieh"
+                        },
+                        {
+                            "type": "text",
+                            "value": " ihn der Lüge"
+                        }
+                    ]
+                },
+                {
+                    "original": "sie hat ihn der Lüge geziehen",
+                    "hidden": "sie _____ ihn der Lüge _____",
+                    "answer": "hat geziehen",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "sie "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "hat"
+                        },
+                        {
+                            "type": "text",
+                            "value": " ihn der Lüge "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "geziehen"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784471023129
+        },
+        {
+            "id": "8012fb5e-60f8-4b84-8118-8552c71fedd3",
+            "language": "Deutsch",
+            "word": "sich verwenden",
+            "meaning": "seine Verbindungen, seinen Einfluss o. Ä. für jemanden, etwas geltend machen; sich in bestimmter Hinsicht für jemanden, etwas einsetzen",
+            "synonyms": [
+                "sich aussprechen für",
+                "sich einsetzen"
+            ],
+            "usage": "gehoben; Grammatik: verwandte, hat verwandt / (seltener:) verwendete, hat verwendet; sich verwenden",
+            "examples": [
+                {
+                    "original": "sich [bei jemandem] für einen Freund verwenden",
+                    "hidden": "_____ [bei jemandem] für einen Freund _____",
+                    "answer": "sich verwenden",
+                    "parts": [
+                        {
+                            "type": "answer",
+                            "value": "sich"
+                        },
+                        {
+                            "type": "text",
+                            "value": " [bei jemandem] für einen Freund "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "verwenden"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784476196419
+        },
+        {
+            "id": "e5451fbe-7e6e-4dd1-bbd7-75f80cdf4709",
+            "language": "Deutsch",
+            "word": "über­drüs­sig",
+            "meaning": "Widerwillen, Abneigung gegen jemanden, etwas empfinden, zu empfinden beginnen",
+            "synonyms": [],
+            "usage": "normalsprachlich",
+            "examples": [
+                {
+                    "original": "jemandes, einer Sache überdrüssig sein, werden",
+                    "hidden": "jemandes, einer Sache _____ sein, werden",
+                    "answer": "überdrüssig",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "jemandes, einer Sache "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "überdrüssig"
+                        },
+                        {
+                            "type": "text",
+                            "value": " sein, werden"
+                        }
+                    ]
+                },
+                {
+                    "original": "er ist ihrer Lügen, des Lebens überdrüssig",
+                    "hidden": "er ist ihrer Lügen, des Lebens _____",
+                    "answer": "überdrüssig",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "er ist ihrer Lügen, des Lebens "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "überdrüssig"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784470619219
+        },
+        {
+            "id": "8dc385d3-c1ce-42bb-a816-b1dcbd97e6c7",
+            "language": "Deutsch",
+            "word": "leut­se­lig",
+            "meaning": "wohlwollend, von einer verbindlichen, Anteil nehmenden Freundlichkeit im Umgang [mit Untergebenen und einfacheren Menschen]",
+            "synonyms": [
+                "entgegenkommend",
+                "freundlich",
+                "jovial",
+                "nett"
+            ],
+            "usage": "normalsprachlich",
+            "examples": [
+                {
+                    "original": "ein leutseliger Chef",
+                    "hidden": "ein _____ Chef",
+                    "answer": "leutseliger",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ein "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "leutseliger"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Chef"
+                        }
+                    ]
+                },
+                {
+                    "original": "eine leutselige Freundlichkeit, Laune",
+                    "hidden": "eine _____ Freundlichkeit, Laune",
+                    "answer": "leutselige",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "eine "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "leutselige"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Freundlichkeit, Laune"
+                        }
+                    ]
+                },
+                {
+                    "original": "leutseliges Schulterklopfen",
+                    "hidden": "_____ Schulterklopfen",
+                    "answer": "leutseliges",
+                    "parts": [
+                        {
+                            "type": "answer",
+                            "value": "leutseliges"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Schulterklopfen"
+                        }
+                    ]
+                },
+                {
+                    "original": "jemandem leutselig zuwinken",
+                    "hidden": "jemandem _____ zuwinken",
+                    "answer": "leutselig",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "jemandem "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "leutselig"
+                        },
+                        {
+                            "type": "text",
+                            "value": " zuwinken"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784470350238
+        },
         {
             "id": "524927c7-66ee-45cc-8424-26992320ea3c",
             "language": "Deutsch",
@@ -527,6 +1165,1067 @@
                 }
             ],
             "created": 1784403843854
+        },
+        {
+            "id": "16cacaa5-9a07-4b9f-bf99-95f90569abf1",
+            "language": "Deutsch",
+            "word": "hienieden",
+            "meaning": "hier auf dieser Erde",
+            "synonyms": [
+                "auf dieser Erde",
+                "im Diesseits"
+            ],
+            "usage": "landschaftlich gehoben oder dichterisch, sonst veraltet",
+            "examples": [
+                {
+                    "original": "Es wächst hienieden Brot genug / Für alle Menschenkinder [ Heine*Wintermärchen* 2,432]",
+                    "hidden": "Es wächst _____ Brot genug / Für alle Menschenkinder [ Heine*Wintermärchen* 2,432]",
+                    "answer": "hienieden",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Es wächst "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "hienieden"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Brot genug / Für alle Menschenkinder [ Heine*Wintermärchen* 2,432]"
+                        }
+                    ]
+                },
+                {
+                    "original": "Aber die Geschicke hienieden sind grausam [ Brecht, *Dreigroschenoper* III 3]",
+                    "hidden": "Aber die Geschicke _____ sind grausam [ Brecht, *Dreigroschenoper* III 3]",
+                    "answer": "hienieden",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Aber die Geschicke "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "hienieden"
+                        },
+                        {
+                            "type": "text",
+                            "value": " sind grausam [ Brecht, *Dreigroschenoper* III 3]"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784404023737
+        },
+        {
+            "id": "3490aa8a-c4b5-4109-a050-b06a33c5ba55",
+            "language": "Deutsch",
+            "word": "Usus, der",
+            "meaning": "Brauch, Gewohnheit, Sitte",
+            "synonyms": [
+                "Brauch",
+                "Gewohnheit",
+                "Herkommen",
+                "Konvention"
+            ],
+            "usage": "normalsprachlich",
+            "examples": [
+                {
+                    "original": "in den Abkürzungen hält sich der Verfasser an den internationalen Usus",
+                    "hidden": "in den Abkürzungen hält sich der Verfasser an den internationalen _____",
+                    "answer": "Usus",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "in den Abkürzungen hält sich der Verfasser an den internationalen "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Usus"
+                        }
+                    ]
+                },
+                {
+                    "original": "im Gegensatz zum Usus der meisten Wörterbücher wird das Material hier nach Sachgebieten geboten",
+                    "hidden": "im Gegensatz zum _____ der meisten Wörterbücher wird das Material hier nach Sachgebieten geboten",
+                    "answer": "Usus",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "im Gegensatz zum "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Usus"
+                        },
+                        {
+                            "type": "text",
+                            "value": " der meisten Wörterbücher wird das Material hier nach Sachgebieten geboten"
+                        }
+                    ]
+                },
+                {
+                    "original": "er fühlte sich dem Usus verpflichtet, nach seinem Urlaub alle Mitarbeiter persönlich zu begrüßen",
+                    "hidden": "er fühlte sich dem _____ verpflichtet, nach seinem Urlaub alle Mitarbeiter persönlich zu begrüßen",
+                    "answer": "Usus",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "er fühlte sich dem "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Usus"
+                        },
+                        {
+                            "type": "text",
+                            "value": " verpflichtet, nach seinem Urlaub alle Mitarbeiter persönlich zu begrüßen"
+                        }
+                    ]
+                },
+                {
+                    "original": "etw. ist Usus = etw. ist üblich, entspricht den Gepflogenheiten",
+                    "hidden": "etw. ist _____ = etw. ist üblich, entspricht den Gepflogenheiten",
+                    "answer": "Usus",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "etw. ist "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Usus"
+                        },
+                        {
+                            "type": "text",
+                            "value": " "
+                        },
+                        {
+                            "type": "comment",
+                            "value": "= etw. ist üblich, entspricht den Gepflogenheiten"
+                        }
+                    ]
+                },
+                {
+                    "original": "das ist bei uns leider noch nicht Usus",
+                    "hidden": "das ist bei uns leider noch nicht _____",
+                    "answer": "Usus",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "das ist bei uns leider noch nicht "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Usus"
+                        }
+                    ]
+                },
+                {
+                    "original": "das ist seit Generationen so Usus",
+                    "hidden": "das ist seit Generationen so _____",
+                    "answer": "Usus",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "das ist seit Generationen so "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Usus"
+                        }
+                    ]
+                },
+                {
+                    "original": "das ist hier so Usus",
+                    "hidden": "das ist hier so _____",
+                    "answer": "Usus",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "das ist hier so "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Usus"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784404303568
+        },
+        {
+            "id": "804aee39-d2a5-4f48-9467-54d36167c697",
+            "language": "Deutsch",
+            "word": "entsinnen",
+            "meaning": "sich etwas wieder ins Gedächtnis rufen; sich erinnern",
+            "synonyms": [
+                "sich besinnen",
+                "denken",
+                "sich erinnern",
+                "in Erinnerung haben"
+            ],
+            "usage": "gehoben",
+            "examples": [
+                {
+                    "original": "sich jemandes, eines Gesprächs entsinnen",
+                    "hidden": "sich jemandes, eines Gesprächs _____",
+                    "answer": "entsinnen",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "sich jemandes, eines Gesprächs "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "entsinnen"
+                        }
+                    ]
+                },
+                {
+                    "original": "ich entsinne mich [dessen] gut",
+                    "hidden": "ich _____ mich [dessen] gut",
+                    "answer": "entsinne",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ich "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "entsinne"
+                        },
+                        {
+                            "type": "text",
+                            "value": " mich [dessen] gut"
+                        }
+                    ]
+                },
+                {
+                    "original": "ich habe mich deiner entsonnen",
+                    "hidden": "ich habe mich deiner _____",
+                    "answer": "entsonnen",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ich habe mich deiner "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "entsonnen"
+                        }
+                    ]
+                },
+                {
+                    "original": "sich an jemanden, an ein Gespräch entsinnen",
+                    "hidden": "sich an jemanden, an ein Gespräch _____",
+                    "answer": "entsinnen",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "sich an jemanden, an ein Gespräch "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "entsinnen"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784404619919
+        },
+        {
+            "id": "dc049836-06ba-4f74-91e0-a3b84a0a79ab",
+            "language": "Deutsch",
+            "word": "Ge­sichts­kreis, der",
+            "meaning": "überschaubarer Umkreis; veraltet: Horizont; durch Erfahrung und Kenntnisse gewonnener geistiger Horizont",
+            "synonyms": [],
+            "usage": "normalsprachlich",
+            "examples": [
+                {
+                    "original": "überschaubarer Umkreis: das Auto entfernte sich aus meinem Gesichtskreis",
+                    "hidden": "überschaubarer Umkreis: das Auto entfernte sich aus meinem _____",
+                    "answer": "Gesichtskreis",
+                    "parts": [
+                        {
+                            "type": "comment",
+                            "value": "überschaubarer Umkreis:"
+                        },
+                        {
+                            "type": "text",
+                            "value": " das Auto entfernte sich aus meinem "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Gesichtskreis"
+                        }
+                    ]
+                },
+                {
+                    "original": "in übertragener Bedeutung: ich habe ihn ganz aus dem Gesichtskreis verloren = treffe ihn nicht mehr, weiß nichts mehr von ihm",
+                    "hidden": "in übertragener Bedeutung: ich habe ihn ganz aus dem _____ verloren = treffe ihn nicht mehr, weiß nichts mehr von ihm",
+                    "answer": "Gesichtskreis",
+                    "parts": [
+                        {
+                            "type": "comment",
+                            "value": "in übertragener Bedeutung:"
+                        },
+                        {
+                            "type": "text",
+                            "value": " ich habe ihn ganz aus dem "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Gesichtskreis"
+                        },
+                        {
+                            "type": "text",
+                            "value": " verloren "
+                        },
+                        {
+                            "type": "comment",
+                            "value": "= treffe ihn nicht mehr, weiß nichts mehr von ihm"
+                        }
+                    ]
+                },
+                {
+                    "original": "seinen Gesichtskreis durch Reisen erweitern",
+                    "hidden": "seinen _____ durch Reisen erweitern",
+                    "answer": "Gesichtskreis",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "seinen "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Gesichtskreis"
+                        },
+                        {
+                            "type": "text",
+                            "value": " durch Reisen erweitern"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784404894129
+        },
+        {
+            "id": "ac56ad45-9490-400b-aa9a-538bc3e1f103",
+            "language": "Deutsch",
+            "word": "einfallen",
+            "meaning": "(von Federwild) irgendwo niedergehen",
+            "synonyms": [],
+            "usage": "Jägersprache",
+            "examples": [
+                {
+                    "original": "die Enten fielen auf den/auf dem See ein",
+                    "hidden": "die Enten _____ auf den/auf dem See _____",
+                    "answer": "fielen ein",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "die Enten "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "fielen"
+                        },
+                        {
+                            "type": "text",
+                            "value": " auf den/auf dem See "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "ein"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784405080585
+        },
+        {
+            "id": "8baf9163-3807-458b-83dd-1e67a9d09e0e",
+            "language": "Deutsch",
+            "word": "waten",
+            "meaning": "auf nachgebendem Untergrund gehen, wobei man ein wenig einsinkt und deshalb die Beine beim Weitergehen anheben muss",
+            "synonyms": [
+                "durchwaten",
+                "stapfen",
+                "stelzen",
+                "tappen"
+            ],
+            "usage": "normalsprachlich",
+            "examples": [
+                {
+                    "original": "ans Ufer waten",
+                    "hidden": "ans Ufer _____",
+                    "answer": "waten",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ans Ufer "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "waten"
+                        }
+                    ]
+                },
+                {
+                    "original": "im Schlamm waten",
+                    "hidden": "im Schlamm _____",
+                    "answer": "waten",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "im Schlamm "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "waten"
+                        }
+                    ]
+                },
+                {
+                    "original": "durch das Wasser, einen Fluss, den Schnee, den Schlick, den Dünensand waten",
+                    "hidden": "durch das Wasser, einen Fluss, den Schnee, den Schlick, den Dünensand _____",
+                    "answer": "waten",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "durch das Wasser, einen Fluss, den Schnee, den Schlick, den Dünensand "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "waten"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784405328619
+        },
+        {
+            "id": "27b3c316-1afe-4933-b34a-664d1245f3c8",
+            "language": "Deutsch",
+            "word": "sich ergehen",
+            "meaning": "sich langatmig (in Worten oder Gedanken) mit etwas beschäftigen; sich über etwas verbreiten, umständlich äußern",
+            "synonyms": [],
+            "usage": "oft abwertend; Perfektbildung mit Hilfsverb ‘haben’",
+            "examples": [
+                {
+                    "original": "sich in Vermutungen, Dankesworten ergehen",
+                    "hidden": "_____ in Vermutungen, Dankesworten _____",
+                    "answer": "sich ergehen",
+                    "parts": [
+                        {
+                            "type": "answer",
+                            "value": "sich"
+                        },
+                        {
+                            "type": "text",
+                            "value": " in Vermutungen, Dankesworten "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "ergehen"
+                        }
+                    ]
+                },
+                {
+                    "original": "oft abwertend: man erging sich in langen Reden",
+                    "hidden": "oft abwertend: man _____ _____ in langen Reden",
+                    "answer": "erging sich",
+                    "parts": [
+                        {
+                            "type": "comment",
+                            "value": "oft abwertend:"
+                        },
+                        {
+                            "type": "text",
+                            "value": " man "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "erging"
+                        },
+                        {
+                            "type": "text",
+                            "value": " "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "sich"
+                        },
+                        {
+                            "type": "text",
+                            "value": " in langen Reden"
+                        }
+                    ]
+                },
+                {
+                    "original": "Mein Geist weicht manchmal vom geraden Pfad ab und ergeht sich auf gewundenen Nebenwegen",
+                    "hidden": "Mein Geist weicht manchmal vom geraden Pfad ab und _____ _____ auf gewundenen Nebenwegen",
+                    "answer": "ergeht sich",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Mein Geist weicht manchmal vom geraden Pfad ab und "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "ergeht"
+                        },
+                        {
+                            "type": "text",
+                            "value": " "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "sich"
+                        },
+                        {
+                            "type": "text",
+                            "value": " auf gewundenen Nebenwegen"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784407415415
+        },
+        {
+            "id": "0f4cb9bd-55af-46d7-8c9a-4e605b158d94",
+            "language": "Deutsch",
+            "word": "sich ausnehmen",
+            "meaning": "in bestimmter Weise erscheinen, wirken",
+            "synonyms": [],
+            "usage": "gehoben",
+            "examples": [
+                {
+                    "original": "das Bild nimmt sich in diesem Raum sehr gut, unpassend aus",
+                    "hidden": "das Bild _____ _____ in diesem Raum sehr gut, unpassend aus",
+                    "answer": "nimmt sich",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "das Bild "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "nimmt"
+                        },
+                        {
+                            "type": "text",
+                            "value": " "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "sich"
+                        },
+                        {
+                            "type": "text",
+                            "value": " in diesem Raum sehr gut, unpassend aus"
+                        }
+                    ]
+                },
+                {
+                    "original": "Jede Dammstraße nahm sich aus wie eine schlanke, mit funkelnden Edelsteinen besetzte Kette, die sich um den Hals der Nacht schlang, während die Stadt in der Mitte wie ein großer, strahlend blitzender Anhänger auf dem Busen der Nacht ruhte.",
+                    "hidden": "Jede Dammstraße _____ _____ _____ wie eine schlanke, mit funkelnden Edelsteinen besetzte Kette, die sich um den Hals der Nacht schlang, während die Stadt in der Mitte wie ein großer, strahlend blitzender Anhänger auf dem Busen der Nacht ruhte.",
+                    "answer": "nahm sich aus",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Jede Dammstraße "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "nahm"
+                        },
+                        {
+                            "type": "text",
+                            "value": " "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "sich"
+                        },
+                        {
+                            "type": "text",
+                            "value": " "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "aus"
+                        },
+                        {
+                            "type": "text",
+                            "value": " wie eine schlanke, mit funkelnden Edelsteinen besetzte Kette, die sich um den Hals der Nacht schlang, während die Stadt in der Mitte wie ein großer, strahlend blitzender Anhänger auf dem Busen der Nacht ruhte."
+                        }
+                    ]
+                }
+            ],
+            "created": 1784479426481
+        },
+        {
+            "id": "0602a8be-2ab0-4ccf-b650-62cc85f5892f",
+            "language": "Deutsch",
+            "word": "unflätig",
+            "meaning": "in höchst ungebührlicher Weise derb, grob, unanständig",
+            "synonyms": [
+                "abweisend",
+                "bärbeißig",
+                "barsch",
+                "brummig"
+            ],
+            "usage": "gehoben abwertend",
+            "examples": [
+                {
+                    "original": "unflätige Worte, Reden, Lieder, Beschimpfungen",
+                    "hidden": "_____ Worte, Reden, Lieder, Beschimpfungen",
+                    "answer": "unflätige",
+                    "parts": [
+                        {
+                            "type": "answer",
+                            "value": "unflätige"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Worte, Reden, Lieder, Beschimpfungen"
+                        }
+                    ]
+                },
+                {
+                    "original": "ein unflätiges Benehmen",
+                    "hidden": "ein _____ Benehmen",
+                    "answer": "unflätiges",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ein "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "unflätiges"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Benehmen"
+                        }
+                    ]
+                },
+                {
+                    "original": "ein unflätiger Mensch",
+                    "hidden": "ein _____ Mensch",
+                    "answer": "unflätiger",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ein "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "unflätiger"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Mensch"
+                        }
+                    ]
+                },
+                {
+                    "original": "unflätig schimpfen",
+                    "hidden": "_____ schimpfen",
+                    "answer": "unflätig",
+                    "parts": [
+                        {
+                            "type": "answer",
+                            "value": "unflätig"
+                        },
+                        {
+                            "type": "text",
+                            "value": " schimpfen"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784410701420
+        },
+        {
+            "id": "195f06e0-03ee-4e3e-a0af-0b2af1a510fc",
+            "language": "Deutsch",
+            "word": "ver­ge­gen­wär­ti­gen",
+            "meaning": "sich etwas klarmachen, deutlich ins Bewusstsein, in Erinnerung rufen",
+            "synonyms": [
+                "sich ausmalen",
+                "bedenken",
+                "sich besinnen",
+                "sich bewusst machen"
+            ],
+            "usage": "normalsprachlich",
+            "examples": [
+                {
+                    "original": "du musst dir unsere [damalige] Lage einmal vergegenwärtigen",
+                    "hidden": "du musst dir unsere [damalige] Lage einmal _____",
+                    "answer": "vergegenwärtigen",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "du musst dir unsere [damalige] Lage einmal "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "vergegenwärtigen"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784413540572
+        },
+        {
+            "id": "f5148f99-ced0-4400-bb39-c4330a3f8c05",
+            "language": "Deutsch",
+            "word": "mannigfaltig",
+            "meaning": "[in großer Anzahl vorhanden und] auf vielerlei Art gestaltet",
+            "synonyms": [
+                "abwechslungsreich",
+                "allgemein",
+                "bunt",
+                "farbig"
+            ],
+            "usage": "gehoben",
+            "examples": [
+                {
+                    "original": "Arbeiten mannigfaltigster Art",
+                    "hidden": "Arbeiten _____ Art",
+                    "answer": "mannigfaltigster",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Arbeiten "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "mannigfaltigster"
+                        },
+                        {
+                            "type": "text",
+                            "value": " Art"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784413716396
+        },
+        {
+            "id": "4afd78fe-5ddd-4e19-9780-2cfb603cedac",
+            "language": "Deutsch",
+            "word": "Fries, der",
+            "meaning": "mit plastischen oder gemalten Ornamenten und figürlichen Darstellungen ausgestaltete Fläche als Gliederung und Schmuck einer Wand. ein lineares, meist waagerechtes Stilelement in der Architektur. Es ist ein schmaler Streifen, der einer Umgrenzung, Abgrenzung, Gliederung und Dekoration von Teilen eines Bauwerks dient",
+            "synonyms": [],
+            "usage": "Architektur",
+            "examples": [
+                {
+                    "original": "ein dorischer Fries",
+                    "hidden": "ein dorischer _____",
+                    "answer": "Fries",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ein dorischer "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Fries"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784466220298
+        },
+        {
+            "id": "946e41f7-1cc0-4913-bd39-2c193a356bad",
+            "language": "Deutsch",
+            "word": "Re­li­ef, das",
+            "meaning": "aus einer Fläche (aus Stein, Metall o. Ä.) erhaben herausgearbeitetes oder in sie vertieftes Bildwerk",
+            "synonyms": [],
+            "usage": "bildende Kunst; Plural: die Reliefs oder die Reliefe",
+            "examples": [
+                {
+                    "original": "etwas im/in Relief darstellen",
+                    "hidden": "etwas im/in _____ darstellen",
+                    "answer": "Relief",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "etwas im/in "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Relief"
+                        },
+                        {
+                            "type": "text",
+                            "value": " darstellen"
+                        }
+                    ]
+                },
+                {
+                    "original": "Auf mehr als 300 Steinen mit Flachreliefs wurden die beginnenden Auseinandersetzungen der Andenvölker mit allen Grausamkeiten verewigt.",
+                    "hidden": "Auf mehr als 300 Steinen mit _____ wurden die beginnenden Auseinandersetzungen der Andenvölker mit allen Grausamkeiten verewigt.",
+                    "answer": "Flachreliefs",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Auf mehr als 300 Steinen mit "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Flachreliefs"
+                        },
+                        {
+                            "type": "text",
+                            "value": " wurden die beginnenden Auseinandersetzungen der Andenvölker mit allen Grausamkeiten verewigt."
+                        }
+                    ]
+                },
+                {
+                    "original": "In Flachreliefs (auch Basreliefs) kommen kaum differenzierte Höhenebenen und nur in sehr begrenztem Maße Rundungen vor.",
+                    "hidden": "In _____ (auch Basreliefs) kommen kaum differenzierte Höhenebenen und nur in sehr begrenztem Maße Rundungen vor.",
+                    "answer": "Flachreliefs",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "In "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Flachreliefs"
+                        },
+                        {
+                            "type": "text",
+                            "value": " (auch Basreliefs) kommen kaum differenzierte Höhenebenen und nur in sehr begrenztem Maße Rundungen vor."
+                        }
+                    ]
+                },
+                {
+                    "original": "Das Halbrelief variiert in der Höhenlage und besitzt auch Ausrundungen, aber kaum Hinterschnitte.",
+                    "hidden": "Das _____ variiert in der Höhenlage und besitzt auch Ausrundungen, aber kaum Hinterschnitte.",
+                    "answer": "Halbrelief",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Das "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Halbrelief"
+                        },
+                        {
+                            "type": "text",
+                            "value": " variiert in der Höhenlage und besitzt auch Ausrundungen, aber kaum Hinterschnitte."
+                        }
+                    ]
+                },
+                {
+                    "original": "Im Hochrelief können die dargestellten Objekte nicht selten bis zur Hälfte (oder mehr) ihres tatsächlichen Ausmaßes aus dem Untergrund hervortreten.",
+                    "hidden": "Im _____ können die dargestellten Objekte nicht selten bis zur Hälfte (oder mehr) ihres tatsächlichen Ausmaßes aus dem Untergrund hervortreten.",
+                    "answer": "Hochrelief",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "Im "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Hochrelief"
+                        },
+                        {
+                            "type": "text",
+                            "value": " können die dargestellten Objekte nicht selten bis zur Hälfte (oder mehr) ihres tatsächlichen Ausmaßes aus dem Untergrund hervortreten."
+                        }
+                    ]
+                }
+            ],
+            "created": 1784467288701
+        },
+        {
+            "id": "b776701f-a67c-4ac5-8ce9-dfbd877de2fc",
+            "language": "Deutsch",
+            "word": "Mörtel, der",
+            "meaning": "breiartiges, innerhalb kürzerer Zeit erhärtendes Gemisch aus Wasser, Sand und Zement, Kalk, Gips o. Ä., das als Bindemittel bei Bausteinen oder zum Verputzen von Wänden und Decken dient",
+            "synonyms": [
+                "Verputz; (schweizerisch) Pflaster; (österreichisch umgangssprachlich) Malter; (besonders westmitteldeutsch) Speis"
+            ],
+            "usage": "normalsprachlich",
+            "examples": [
+                {
+                    "original": "der alte Mörtel bröckelt von der Wand",
+                    "hidden": "der alte _____ bröckelt von der Wand",
+                    "answer": "Mörtel",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "der alte "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Mörtel"
+                        },
+                        {
+                            "type": "text",
+                            "value": " bröckelt von der Wand"
+                        }
+                    ]
+                },
+                {
+                    "original": "Mörtel mischen",
+                    "hidden": "_____ mischen",
+                    "answer": "Mörtel",
+                    "parts": [
+                        {
+                            "type": "answer",
+                            "value": "Mörtel"
+                        },
+                        {
+                            "type": "text",
+                            "value": " mischen"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784467737624
+        },
+        {
+            "id": "bf44473f-7407-4c59-bbbb-cc9f72a12f41",
+            "language": "Deutsch",
+            "word": "Qua­der, der",
+            "meaning": "behauener Steinblock von der Form eines Quaders (Quader = von sechs Rechtecken begrenzter Körper)",
+            "synonyms": [],
+            "usage": "normalsprachlich",
+            "examples": [
+                {
+                    "original": "ein aus Quadern erbauter Tempel (= behauener Steinblock)",
+                    "hidden": "ein aus _____ erbauter Tempel (= behauener Steinblock)",
+                    "answer": "Quadern",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "ein aus "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Quadern"
+                        },
+                        {
+                            "type": "text",
+                            "value": " erbauter Tempel "
+                        },
+                        {
+                            "type": "comment",
+                            "value": "(= behauener Steinblock)"
+                        }
+                    ]
+                },
+                {
+                    "original": "der Rauminhalt des Quaders (= von sechs Rechtecken begrenzter Körper)",
+                    "hidden": "der Rauminhalt des _____ (= von sechs Rechtecken begrenzter Körper)",
+                    "answer": "Quaders",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "der Rauminhalt des "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "Quaders"
+                        },
+                        {
+                            "type": "text",
+                            "value": " "
+                        },
+                        {
+                            "type": "comment",
+                            "value": "(= von sechs Rechtecken begrenzter Körper)"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784468386980
+        },
+        {
+            "id": "f1947d24-4bcf-4a9a-8310-d66cafa80684",
+            "language": "Deutsch",
+            "word": "ver­blen­den",
+            "meaning": "(mit einem schöneren, wertvolleren Material) verkleiden",
+            "synonyms": [
+                "verkleiden"
+            ],
+            "usage": "normalsprachlich",
+            "examples": [
+                {
+                    "original": "eine Fassade mit Aluminium verblenden",
+                    "hidden": "eine Fassade mit Aluminium _____",
+                    "answer": "verblenden",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "eine Fassade mit Aluminium "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "verblenden"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784468623047
+        },
+        {
+            "id": "b7e2a194-3247-48d2-a17b-253868a129ad",
+            "language": "Deutsch",
+            "word": "em­por",
+            "meaning": "[von unten] nach oben, aufwärts, hinauf, hoch, in die Höhe",
+            "synonyms": [
+                "auf",
+                "aufwärts",
+                "bergan",
+                "bergauf"
+            ],
+            "usage": "gehoben",
+            "examples": [
+                {
+                    "original": "zum Licht empor",
+                    "hidden": "zum Licht _____",
+                    "answer": "empor",
+                    "parts": [
+                        {
+                            "type": "text",
+                            "value": "zum Licht "
+                        },
+                        {
+                            "type": "answer",
+                            "value": "empor"
+                        }
+                    ]
+                },
+                {
+                    "original": "empor zu den Sternen",
+                    "hidden": "_____ zu den Sternen",
+                    "answer": "empor",
+                    "parts": [
+                        {
+                            "type": "answer",
+                            "value": "empor"
+                        },
+                        {
+                            "type": "text",
+                            "value": " zu den Sternen"
+                        }
+                    ]
+                }
+            ],
+            "created": 1784469724992
         }
     ]
 }
