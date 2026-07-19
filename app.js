@@ -495,7 +495,7 @@ function saveVocabulary() {
 
     else {
 
-        app.vocabulary.push(
+        app.vocabulary.unshift(
             vocabulary
         );
 
