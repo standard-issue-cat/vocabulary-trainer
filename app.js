@@ -133,6 +133,196 @@ function bindEvents() {
 
 }
 
+
+
+// ======================================================
+// TEXTAREA EDITOR HELPERS
+// ======================================================
+
+function enableBracketWrapping(textarea) {
+
+    const pairs = {
+        "{": "}",
+        "[": "]",
+        "(": ")",
+        "\"": "\"",
+        "'": "'"
+    };
+
+    textarea.addEventListener("keydown", event => {
+
+        const close = pairs[event.key];
+
+        if (!close) {
+            return;
+        }
+
+        const start = textarea.selectionStart;
+        const end = textarea.selectionEnd;
+
+        // --------------------------------------------------
+        // Text markiert -> umschließen
+        // --------------------------------------------------
+
+        if (start !== end) {
+
+            event.preventDefault();
+
+            const selected =
+                textarea.value.substring(start, end);
+
+            textarea.setRangeText(
+                event.key + selected + close,
+                start,
+                end,
+                "select"
+            );
+
+            return;
+        }
+
+        // --------------------------------------------------
+        // Cursor steht vor einer schließenden Klammer
+        // -> einfach darüber springen
+        // --------------------------------------------------
+
+        if (
+            textarea.value[end] === close &&
+            event.key !== "\"" &&
+            event.key !== "'"
+        ) {
+
+            event.preventDefault();
+
+            textarea.selectionStart = end + 1;
+            textarea.selectionEnd = end + 1;
+
+            return;
+
+        }
+
+        // --------------------------------------------------
+        // Kein Text markiert -> Paar einfügen
+        // --------------------------------------------------
+
+        event.preventDefault();
+
+        textarea.setRangeText(
+            event.key + close,
+            start,
+            end,
+            "end"
+        );
+
+        textarea.selectionStart = start + 1;
+        textarea.selectionEnd = start + 1;
+
+    });
+
+
+
+    // --------------------------------------------------
+    // Backspace löscht {} [] ()
+    // --------------------------------------------------
+
+    textarea.addEventListener("keydown", event => {
+
+        if (event.key !== "Backspace") {
+            return;
+        }
+
+        const pos = textarea.selectionStart;
+
+        if (pos !== textarea.selectionEnd) {
+            return;
+        }
+
+        const before = textarea.value[pos - 1];
+        const after = textarea.value[pos];
+
+        const pairs = {
+            "{": "}",
+            "[": "]",
+            "(": ")",
+            "\"": "\"",
+            "'": "'"
+        };
+
+        if (pairs[before] !== after) {
+            return;
+        }
+
+        event.preventDefault();
+
+        textarea.setRangeText(
+            "",
+            pos - 1,
+            pos + 1,
+            "end"
+        );
+
+    });
+
+
+
+    // --------------------------------------------------
+    // Ctrl+B -> {Text}
+    // Ctrl+/ -> /*Text*/
+    // --------------------------------------------------
+
+    textarea.addEventListener("keydown", event => {
+
+        const start = textarea.selectionStart;
+        const end = textarea.selectionEnd;
+
+        if (start === end) {
+            return;
+        }
+
+        // Ctrl+B
+        if (
+            event.ctrlKey &&
+            event.key.toLowerCase() === "b"
+        ) {
+
+            event.preventDefault();
+
+            const selected =
+                textarea.value.substring(start, end);
+
+            textarea.setRangeText(
+                "{" + selected + "}",
+                start,
+                end,
+                "select"
+            );
+
+        }
+
+        // Ctrl+/
+        if (
+            event.ctrlKey &&
+            event.key === "/"
+        ) {
+
+            event.preventDefault();
+
+            const selected =
+                textarea.value.substring(start, end);
+
+            textarea.setRangeText(
+                "/*" + selected + "*/",
+                start,
+                end,
+                "select"
+            );
+
+        }
+
+    });
+
+}
+
 // ======================================================
 // STORAGE
 // ======================================================
@@ -298,6 +488,8 @@ function createExampleField(value = "") {
     textarea.className = "example";
 
     textarea.value = value;
+
+    enableBracketWrapping(textarea);
 
     exampleContainer.appendChild(textarea);
 
