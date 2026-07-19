@@ -281,7 +281,7 @@ function enableBracketWrapping(textarea) {
 
         // Ctrl+B
         if (
-            event.ctrlKey &&
+            (event.ctrlKey || event.metaKey) &&
             event.key.toLowerCase() === "b"
         ) {
 
@@ -299,10 +299,10 @@ function enableBracketWrapping(textarea) {
 
         }
 
-        // Ctrl+/
+        // Ctrl+M
         if (
-            event.ctrlKey &&
-            event.key === "/"
+            (event.ctrlKey || event.metaKey) &&
+            event.key === "m"
         ) {
 
             event.preventDefault();
