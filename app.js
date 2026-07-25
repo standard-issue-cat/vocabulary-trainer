@@ -1412,7 +1412,8 @@ const showAnswerButton =
 const nextButton =
     document.getElementById("nextButton");
 
-
+const hintButton =
+    document.getElementById("hintButton");
 
 // ======================================================
 // ANSWER DISPLAY FLAG
@@ -1429,7 +1430,9 @@ let practice = {
 
     cards: [],
 
-    current: null
+    current: null,
+
+    revealedLetters: []
 
 };
 
@@ -1538,7 +1541,8 @@ function showExpertQuestion() {
     practice.currentExample =
         example;
 
-
+    practice.revealedLetters =
+        new Array(example.answer.length).fill(false);
 
     questionArea.innerHTML =
     `
@@ -1565,6 +1569,8 @@ function showExpertQuestion() {
         )}
 
     </p>
+
+    <div id="letterHints"></div>
 
     `;
 
@@ -2641,3 +2647,66 @@ window.exportVocabulary =
 
 window.importVocabulary =
     importJSON;
+
+function renderLetterHints() {
+
+    const container =
+        document.getElementById("letterHints");
+
+    if (!container) {
+        return;
+    }
+
+    container.innerHTML = "";
+
+    [...practice.currentExample.answer].forEach((letter, index) => {
+
+        if (letter === " ") {
+
+            const space =
+                document.createElement("span");
+
+            space.style.display = "inline-block";
+            space.style.width = "15px";
+
+            container.appendChild(space);
+
+            return;
+        }
+
+        const button =
+            document.createElement("button");
+
+        button.className = "hint-letter";
+
+        button.textContent =
+            practice.revealedLetters[index]
+            ? letter
+            : "•";
+
+        button.addEventListener("click", () => {
+
+            practice.revealedLetters[index] = true;
+
+            renderLetterHints();
+
+        });
+
+        container.appendChild(button);
+
+    });
+
+}
+
+hintButton.addEventListener(
+    "click",
+    () => {
+
+        if (practice.mode !== "expert") {
+            return;
+        }
+
+        renderLetterHints();
+
+    }
+);

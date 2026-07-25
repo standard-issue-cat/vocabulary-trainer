@@ -847,3 +847,18 @@ dialog input {
     transform: scale(1.02);
 
 }
+
+
+.hint-letter {
+
+    width:34px;
+    height:34px;
+
+    margin:2px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:bold;
+}
