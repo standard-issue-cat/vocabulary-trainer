@@ -57,6 +57,13 @@
             placeholder="mitmachen"
         >
 
+        <label>Part of Speech</label>
+
+        <input
+            id="partOfSpeechInput"
+            type="text"
+            placeholder="verb"
+        >
         <label>Meaning</label>
 
         <input
@@ -140,16 +147,16 @@
 
         <select id="practiceMode">
 
+            <option value="expert">
+                Expert
+            </option>
+
             <option value="meaning">
                 Meaning → Word
             </option>
 
             <option value="word">
                 Word → Meaning
-            </option>
-
-            <option value="expert">
-                Expert
             </option>
 
         </select>
@@ -244,6 +251,16 @@
         </div>
 
         <p id="dialogUsage"></p>
+
+    </div>
+
+    <div id="partOfSpeechSection" class="dialog-section">
+
+        <div class="dialog-label">
+            Part of Speech
+        </div>
+
+        <p id="dialogPartOfSpeech"></p>
 
     </div>
 

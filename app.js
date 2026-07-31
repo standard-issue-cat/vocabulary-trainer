@@ -41,6 +41,7 @@ const cancelLanguageButton = document.getElementById("cancelLanguageButton");
 // editor
 
 const wordInput = document.getElementById("wordInput");
+const partOfSpeechInput = document.getElementById("partOfSpeechInput");
 const meaningInput = document.getElementById("meaningInput");
 const synonymsInput = document.getElementById("synonymsInput");
 const usageInput = document.getElementById("usageInput");
@@ -68,12 +69,13 @@ const dialogUsage = document.getElementById("dialogUsage");
 const dialogExamples = document.getElementById("dialogExamples");
 const dialogClose = document.getElementById("dialogClose");
 
-
-
+const dialogPartOfSpeech =  document.getElementById("dialogPartOfSpeech");
 
 const synonymsSection = document.getElementById("synonymsSection");
 
 const usageSection = document.getElementById("usageSection");
+
+const partOfSpeechSection = document.getElementById("partOfSpeechSection");
 // ======================================================
 // START
 // ======================================================
@@ -575,6 +577,8 @@ function saveVocabulary() {
     const word =
         wordInput.value.trim();
 
+    const partOfSpeech = partOfSpeechInput.value.trim();
+    
     const meaning =
         meaningInput.value.trim();
 
@@ -643,6 +647,8 @@ function saveVocabulary() {
         language,
 
         word,
+
+        partOfSpeech,
 
         meaning,
 
@@ -898,6 +904,8 @@ function resetEditor() {
 
     wordInput.value = "";
 
+    partOfSpeechInput.value = "";
+
     meaningInput.value = "";
 
     synonymsInput.value = "";
@@ -1070,7 +1078,19 @@ function showVocabulary(vocabulary) {
     dialogMeaning.innerHTML =
         escapeHTML(vocabulary.meaning);
 
+    if (vocabulary.partOfSpeech) {
 
+        partOfSpeechSection.style.display = "block";
+
+        dialogPartOfSpeech.textContent =
+            vocabulary.partOfSpeech;
+
+    }
+    else {
+
+        partOfSpeechSection.style.display = "none";
+
+    }
 
     /* Synonyms */
 
@@ -1156,6 +1176,8 @@ function editVocabulary(id) {
     wordInput.value =
         vocabulary.word;
 
+    partOfSpeechInput.value =
+        vocabulary.partOfSpeech ?? "";
 
     meaningInput.value =
         vocabulary.meaning;
