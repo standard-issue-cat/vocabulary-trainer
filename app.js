@@ -76,6 +76,13 @@ const synonymsSection = document.getElementById("synonymsSection");
 const usageSection = document.getElementById("usageSection");
 
 const partOfSpeechSection = document.getElementById("partOfSpeechSection");
+
+// pdf
+
+const pdfButton =  document.getElementById("pdfButton");
+
+
+
 // ======================================================
 // START
 // ======================================================
@@ -2732,3 +2739,51 @@ hintButton.addEventListener(
 
     }
 );
+
+
+
+
+// ======================================================
+// PDF EXPORT
+// ======================================================
+
+pdfButton.addEventListener(
+    "click",
+    exportPDF
+);
+
+async function exportPDF() {
+
+    const { jsPDF } = window.jspdf;
+
+    const pdf = new jsPDF({
+
+        orientation: "portrait",
+
+        unit: "mm",
+
+        format: "a4"
+
+    });
+
+    pdf.setFontSize(28);
+
+    pdf.text(
+        "Vocabulary Export",
+        20,
+        30
+    );
+
+    pdf.setFontSize(14);
+
+    pdf.text(
+        "Entries: " + app.vocabulary.length,
+        20,
+        45
+    );
+
+    pdf.save(
+        "Vocabulary.pdf"
+    );
+
+}
