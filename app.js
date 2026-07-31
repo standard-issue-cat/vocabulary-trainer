@@ -2757,33 +2757,194 @@ async function exportPDF() {
     const { jsPDF } = window.jspdf;
 
     const pdf = new jsPDF({
-
         orientation: "portrait",
-
         unit: "mm",
-
         format: "a4"
+    });
+
+    drawCoverPage(pdf);
+
+    app.vocabulary.forEach((vocabulary, index) => {
+
+        pdf.addPage();
+
+        drawVocabularyPage(pdf, vocabulary, index + 1);
 
     });
 
-    pdf.setFontSize(28);
+    pdf.save("Vocabulary.pdf");
+
+}
+
+function drawCoverPage(pdf) {
+
+    pdf.setFont("helvetica", "bold");
+
+    pdf.setFontSize(30);
 
     pdf.text(
-        "Vocabulary Export",
+        "Vocabulary",
         20,
-        30
+        40
     );
+
+    pdf.setFontSize(18);
+
+    pdf.text(
+        "Export",
+        20,
+        52
+    );
+
+    pdf.setFont("helvetica", "normal");
 
     pdf.setFontSize(14);
 
     pdf.text(
-        "Entries: " + app.vocabulary.length,
+        "Created: " + new Date().toLocaleDateString(),
         20,
-        45
+        80
     );
 
-    pdf.save(
-        "Vocabulary.pdf"
+    pdf.text(
+        "Entries: " + app.vocabulary.length,
+        20,
+        90
+    );
+
+}
+
+function drawVocabularyPage(pdf, vocabulary, pageNumber) {
+
+    let y = 25;
+
+    // Wort
+
+    pdf.setFont("helvetica", "bold");
+
+    pdf.setFontSize(24);
+
+    pdf.text(
+        vocabulary.word,
+        20,
+        y
+    );
+
+    y += 12;
+
+    // Wortart
+
+    if (vocabulary.partOfSpeech) {
+
+        pdf.setFontSize(14);
+
+        pdf.setFont("helvetica", "italic");
+
+        pdf.text(
+            vocabulary.partOfSpeech,
+            20,
+            y
+        );
+
+        y += 12;
+
+    }
+
+    pdf.setFont("helvetica", "normal");
+
+    pdf.setFontSize(12);
+
+    // Meaning
+
+    pdf.setFont("helvetica", "bold");
+
+    pdf.text("Meaning", 20, y);
+
+    y += 7;
+
+    pdf.setFont("helvetica", "normal");
+
+    pdf.text(
+        vocabulary.meaning,
+        20,
+        y
+    );
+
+    y += 15;
+
+    // Synonyms
+
+    if (vocabulary.synonyms.length > 0) {
+
+        pdf.setFont("helvetica", "bold");
+
+        pdf.text("Synonyms", 20, y);
+
+        y += 7;
+
+        pdf.setFont("helvetica", "normal");
+
+        pdf.text(
+            vocabulary.synonyms.join(", "),
+            20,
+            y
+        );
+
+        y += 15;
+
+    }
+
+    // Usage
+
+    pdf.setFont("helvetica", "bold");
+
+    pdf.text("Usage", 20, y);
+
+    y += 7;
+
+    pdf.setFont("helvetica", "normal");
+
+    pdf.text(
+        vocabulary.usage || "",
+        20,
+        y
+    );
+
+    y += 15;
+
+    // Examples
+
+    pdf.setFont("helvetica", "bold");
+
+    pdf.text("Examples", 20, y);
+
+    y += 7;
+
+    pdf.setFont("helvetica", "normal");
+
+    vocabulary.examples.forEach(example => {
+
+        pdf.text(
+            "• " + example.original,
+            25,
+            y
+        );
+
+        y += 8;
+
+    });
+
+    // Seitenzahl
+
+    pdf.setFontSize(10);
+
+    pdf.text(
+        String(pageNumber),
+        195,
+        290,
+        {
+            align: "right"
+        }
     );
 
 }
