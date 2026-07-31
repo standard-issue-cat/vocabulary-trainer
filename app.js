@@ -2776,6 +2776,33 @@ async function exportPDF() {
 
 }
 
+function cleanPDFText(text) {
+
+    return String(text)
+        .replace(/\u00AD/g, "")
+        .replace(/\u200B/g, "");
+
+}
+
+
+function drawWrappedText(pdf, text, x, y, maxWidth, lineHeight = 6) {
+
+    text = cleanPDFText(text);
+
+    const lines = pdf.splitTextToSize(
+        text,
+        maxWidth
+    );
+
+    pdf.text(
+        lines,
+        x,
+        y
+    );
+
+    return y + lines.length * lineHeight;
+}
+
 function drawCoverPage(pdf) {
 
     pdf.setFont("helvetica", "bold");
@@ -2864,13 +2891,15 @@ function drawVocabularyPage(pdf, vocabulary, pageNumber) {
 
     pdf.setFont("helvetica", "normal");
 
-    pdf.text(
+    y = drawWrappedText(
+        pdf,
         vocabulary.meaning,
         20,
-        y
+        y,
+        170
     );
 
-    y += 15;
+    y += 8;
 
     // Synonyms
 
@@ -2884,13 +2913,15 @@ function drawVocabularyPage(pdf, vocabulary, pageNumber) {
 
         pdf.setFont("helvetica", "normal");
 
-        pdf.text(
+        y = drawWrappedText(
+            pdf,
             vocabulary.synonyms.join(", "),
             20,
-            y
+            y,
+            170
         );
 
-        y += 15;
+        y += 8;
 
     }
 
@@ -2904,13 +2935,15 @@ function drawVocabularyPage(pdf, vocabulary, pageNumber) {
 
     pdf.setFont("helvetica", "normal");
 
-    pdf.text(
+    y = drawWrappedText(
+        pdf,
         vocabulary.usage || "",
         20,
-        y
+        y,
+        170
     );
 
-    y += 15;
+    y += 8;
 
     // Examples
 
@@ -2924,13 +2957,16 @@ function drawVocabularyPage(pdf, vocabulary, pageNumber) {
 
     vocabulary.examples.forEach(example => {
 
-        pdf.text(
+        y = drawWrappedText(
+            pdf,
             "• " + example.original,
             25,
-            y
+            y,
+            165,
+            6
         );
 
-        y += 8;
+        y += 4;
 
     });
 
